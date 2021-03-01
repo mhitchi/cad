@@ -4,3 +4,12 @@
     position: fixed;
     width: 100%;
 }
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-item {
+    margin: 10px;
+}
