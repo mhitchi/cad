@@ -1,15 +1,185 @@
 #header {
-    background-color: #f1f1f1;
-    height: 220px;
     position: fixed;
     width: 100%;
+    z-index: 99;
+}
+
+h1 {
+  font-family: "HaveHeartOne";
+  font-size: 6rem !important;
+  src: url("../fonts/HaveHeartOne.ttf") format("truetype");
+}
+
+h2,h3,h4 {
+  font-family: "TradeGothicLTPro-BdCn20";
+  text-transform: uppercase;
+  src: url("../fonts/TradeGothicLTPro-BdCn20.otf") format("opentype");
+}
+
+p {
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+span {
+  font-size: .75rem;
+  font-style: italic;
+}
+
+.have-heart {
+  font-family: "HaveHeartOne";
+  font-size: 6rem !important;
+  text-transform: none;
+  src: url("../fonts/HaveHeartOne.ttf") format("truetype");
+}
+
+.navbar {
+    height: 140px;
 }
 
 .navbar ul {
-    display: flex;
     list-style-type: none;
 }
 
 .nav-item {
+    color: #ffffff;
+    font-family: "Merriweather Sans", sans-serif;
     margin: 10px;
 }
+
+.navbar-brand img {
+    margin-bottom: -40px;
+}
+
+.centered {
+  margin-top: 6rem;
+}
+
+#countdown {
+  font-size: 2rem;
+}
+
+body {
+  background-color: #000000 !important;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.stat {
+  font-size: 2rem;
+  margin: 10px;
+}
+
+.bg-black {
+  background-color: #000000 !important;
+}
+
+.bg-glory {
+  background-color: #ef333b;
+  height: 250px; 
+  margin: 3rem auto 3rem auto;
+  z-index: 1;
+}
+
+.bg-bulldawg {
+  background-color: #ba0c2f;
+  height: 250px;
+  margin: 4rem auto 8rem auto; 
+  z-index: 1;
+}
+
+.text-white {
+    height: 1200px;
+    margin-top: 140px;
+}
+
+.diagonal {	
+   transform: skewY(-6deg);
+}
+
+.diagonal .column {
+  margin-top: 4rem;
+  transform: skewY(6deg);
+}
+
+.separator {
+  margin-top: 4rem;
+}
+
+#logo {
+  transition: ease-in-out 0.5s;
+}
+
+#vid {
+  margin: 80px auto 80px auto;
+  width: 100%;
+}
+
+.modal-dialog {
+  margin: 240px auto !important;
+}
+
+
+.mega {
+  width: 100%;
+}
+
+#countdown-wrap {
+    width: 100%;
+    font-family: "Merriweather Sans", sans-serif;
+    height: 120px;
+    margin-top: 40px;
+    max-width: 450px;
+    padding: 20px;
+  }
+  
+  #goal {
+    font-size: 1.5rem;
+    text-align: right;
+    color: #FFF;
+    @media only screen and (max-width : 640px) {
+      text-align: center;  
+    }
+    
+  }
+  
+  #glass {
+    width: 100%;
+    height: 20px;
+    background: #c7c7c7;
+    border-radius: 10px;
+    float: left;
+    overflow: hidden;
+  }
+  
+  #progress {
+    float: left;
+    width: 16%;
+    height: 20px;
+    background: #ef333b;
+    z-index: 333;
+    border-radius: 5px;
+  }
+  
+  .goal-stat {
+    width: 25%;
+    height: 30px;
+    padding: 10px;
+    float: left;
+    margin: 0;
+    color: #FFF;
+    
+    @media only screen and (max-width : 640px) {
+      width: 50%;
+      text-align: center;
+    }
+  }
+  
+  .goal-number, .goal-label {
+    display: block;
+  }
+  
+  .goal-number {
+    font-weight: bold;
+  }
