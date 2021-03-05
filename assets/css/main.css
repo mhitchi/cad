@@ -10,6 +10,10 @@ h1 {
   src: url("../fonts/HaveHeartOne.ttf") format("truetype");
 }
 
+h2 {
+  font-size: 1.75rem !important;
+}
+
 h2,h3,h4 {
   font-family: "TradeGothicLTPro-BdCn20";
   text-transform: uppercase;
@@ -75,25 +79,60 @@ body {
   background-color: #000000 !important;
 }
 
-.bg-glory {
+.nav.flex-column {
+  background-color: #303030;
+  border-radius: 10%;
+}
+
+.nav-link.active {
+  background-color: #505050 !important;
+  color: #ffffff !important;
+}
+
+.nav-link {
+  background-color: #303030 !important;
+}
+
+.nav-link:hover {
+  margin-left: -10px;
+  transition: ease-in-out .5s;
+}
+
+a {
+  color: #ffffff !important;
+}
+
+/* .bg-glory {
   background-color: #ef333b;
   content: " ";
   display: block;
   height: 250px; 
-  margin: 3rem auto 3rem auto;
+  margin: 2rem auto 0 auto;
   position: absolute;
-  /* top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0; */
+  transform: skewY(-6deg) !important;
+  z-index: 1;
+} */
+.bg-glory {
+  background-image: linear-gradient(to bottom, #ba0c2f, #ba0c2f 50%, #ef333b 50%);
+  /* background-attachment:fixed; */
+  background-repeat: no-repeat;
+  content: " ";
+  display: block;
+  height: 500px; 
+  margin: 2rem auto 5rem auto;
+  position: absolute;
   transform: skewY(-6deg) !important;
   z-index: 1;
 }
 
 .bg-bulldawg {
   background-color: #ba0c2f;
-  height: 250px;
-  margin: 4rem auto 8rem auto; 
+  content: " ";
+  display: block;
+  height: 250px; 
+  margin: 0 auto 8rem auto;
+  position: relative;
+  transform: skewY(-6deg) !important;
   z-index: 1;
 }
 
@@ -120,14 +159,14 @@ body {
 }
 
 #vid {
-  margin: 80px auto 80px auto;
+  margin: 0px auto 80px auto;
   width: 100%;
+  z-index: 99;
 }
 
 .modal-dialog {
   margin: 240px auto !important;
 }
-
 
 .mega {
   width: 100%;
