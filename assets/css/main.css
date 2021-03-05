@@ -30,7 +30,7 @@ span {
 }
 
 .have-heart {
-  font-family: "HaveHeartOne";
+  font-family: "HaveHeartOne", "Permanent Marker";
   font-size: 6rem !important;
   text-transform: none;
   src: url("../fonts/HaveHeartOne.ttf") format("truetype");
@@ -172,7 +172,7 @@ a {
   width: 100%;
 }
 
-#countdown-wrap {
+.countdown-wrap {
     width: 100%;
     font-family: "Merriweather Sans", sans-serif;
     height: 120px;
@@ -181,7 +181,7 @@ a {
     padding: 20px;
   }
   
-  #goal {
+  .goal {
     font-size: 1.5rem;
     text-align: right;
     color: #FFF;
@@ -191,7 +191,7 @@ a {
     
   }
   
-  #glass {
+  .glass {
     width: 100%;
     height: 20px;
     background: #c7c7c7;
@@ -200,9 +200,27 @@ a {
     overflow: hidden;
   }
   
-  #progress {
+  #progress01 {
+    float: left;
+    width: 1%;
+    height: 20px;
+    background: #ef333b;
+    z-index: 333;
+    border-radius: 5px;
+  }
+
+  #progress02 {
     float: left;
     width: 16%;
+    height: 20px;
+    background: #ef333b;
+    z-index: 333;
+    border-radius: 5px;
+  }
+
+  #progress03 {
+    float: left;
+    width: 80%;
     height: 20px;
     background: #ef333b;
     z-index: 333;
