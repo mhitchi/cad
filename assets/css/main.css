@@ -77,8 +77,16 @@ body {
 
 .bg-glory {
   background-color: #ef333b;
+  content: " ";
+  display: block;
   height: 250px; 
   margin: 3rem auto 3rem auto;
+  position: absolute;
+  /* top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0; */
+  transform: skewY(-6deg) !important;
   z-index: 1;
 }
 
@@ -98,20 +106,9 @@ body {
    position: relative;
 }
 
-.diagonal::before {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  transform: skewY(-6deg) !important;
-}
-
 .diagonal .column {
   margin-top: 4rem;
-  /* transform: skewY(6deg); */
+  transform: skewY(6deg);
 }
 
 .separator {
