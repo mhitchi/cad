@@ -95,12 +95,23 @@ body {
 }
 
 .diagonal {	
-   transform: skewY(-6deg);
+   position: relative;
+}
+
+.diagonal::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transform: skewY(-6deg) !important;
 }
 
 .diagonal .column {
   margin-top: 4rem;
-  transform: skewY(6deg);
+  /* transform: skewY(6deg); */
 }
 
 .separator {

@@ -15,7 +15,7 @@ let x = setInterval(() => {
     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     //display result in the DOM
-    document.getElementById("countdown").innerHTML = `${days} days ${hours} hours ${minutes} minutes ${seconds} seconds to go`;
+    document.getElementById("countdown").innerHTML = `${days} days ${hours} hours to go`;
 
     //if countdown expired
     if (distance < 0) {
