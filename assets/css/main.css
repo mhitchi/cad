@@ -1,3 +1,5 @@
+
+
 #header {
     position: fixed;
     width: 100%;
@@ -15,9 +17,10 @@ h2 {
 }
 
 h2,h3,h4 {
-  font-family: "TradeGothicLTPro-BdCn20";
+  font-family: 'TradeGothicLTPro-BdCn20'; 
+	font-weight: normal; 
+	font-style: normal;
   text-transform: uppercase;
-  src: url("../fonts/TradeGothicLTPro-BdCn20.otf") format("opentype");
 }
 
 p {
