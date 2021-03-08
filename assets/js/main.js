@@ -3,15 +3,32 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    document.getElementById("header").style.height = "140px";
-    document.getElementById("logo").style.height = "140px";
+    document.getElementById("header").style.height = "100px";
+    document.getElementById("logo").style.height = "120px";
+    if (mobile.matches) {
+      document.getElementById("logo").style.margin = "0 137px";
+    } else if (landscape.matches) {
+      document.getElementById("logo").style.margin = "0 0";
+    }
     document.getElementById("header").style.backgroundColor = "rgba(0,0,0,0.75)";
   } else {
     document.getElementById("header").style.height = "160px";
-    document.getElementById("logo").style.height = "260px";
+    document.getElementById("logo").style.height = "220px";
+    if (mobile.matches) {
+      document.getElementById("logo").style.margin = "0 90px";
+    } else if (landscape.matches) {
+      document.getElementById("logo").style.margin = "0 0";
+    }
     document.getElementById("header").style.backgroundColor = "rgba(0,0,0,1)";
   }
 }
+var mobile = window.matchMedia("(max-width: 700px)");
+scrollFunction(mobile); // Call listener function at run time
+mobile.addListener(scrollFunction); // Attach listener function on state changes
+
+var landscape = window.matchMedia("(min-width: 701px)");
+scrollFunction(landscape); // Call listener function at run time
+landscape.addListener(scrollFunction); // Attach listener function on state changes
 
 const show = () => {
   document.getElementById("vid").src = "assets/images/placeholder-vid-bg03.jpg";
