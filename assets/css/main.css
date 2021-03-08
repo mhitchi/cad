@@ -7,8 +7,29 @@
     display: none;
   }
   h1 {
-  margin-top: 6rem !important;
-  font-size: 4rem !important; 
+    margin-top: 6rem !important;
+    font-size: 4rem !important; 
+  }
+  #vid {
+    margin: 0px auto 25px auto;
+    width: 100%;
+  }
+  .nav-pills {
+    margin: 2rem 0 -5rem 12rem;
+    width: 50%;
+  }
+  .nav-link {
+    font-size: .75rem;
+  }
+  .challenge {
+    margin-top: 5rem;
+  }
+  .glass {
+    width: 100% !important;
+  }
+  .bg-glory {
+    margin-top: 3rem;
+    width: 105%;
   }
 }
 
@@ -21,19 +42,43 @@
     display: block;
   }
   h1 {
-  margin-top: 6rem !important;
-  font-size: 6rem !important; 
+    margin-top: 6rem !important;
+    font-size: 6rem !important; 
+  }
+  #vid {
+    margin: 0px auto 25px auto;
+    width: 50% !important;
+  }
+  .nav-pills {
+    margin: 2rem 0 -1rem 30rem;
+    width: 30%;
+  }
+  .nav-link {
+    font-size: .75rem;
+  }
+  .bg-glory {
+    margin-top: 3rem;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
-}
+  #vid {
+    margin: 0px auto 25px auto;
+    width: 50% !important;
+  }
+  .nav-pills {
+      margin: 4rem 0 -1rem 4rem;
+      width: 80%;
+    }
+  }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+  #vid {
+    margin: 0px auto 25px auto;
+    width: 100% !important;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -115,6 +160,10 @@ body {
   text-align: center;
 }
 
+.align-right {
+  text-align: right;
+}
+
 .stat {
   font-size: 2rem;
   margin: 10px;
@@ -163,14 +212,13 @@ a {
   background-repeat: no-repeat;
   content: " ";
   display: block;
-  height: 500px; 
-  margin: 2rem auto 5rem auto;
   position: absolute;
   transform: skewY(-6deg) !important;
+  width: 105% !important;
   z-index: 1;
 }
 
-.bg-bulldawg {
+/* .bg-bulldawg {
   background-color: #ba0c2f;
   content: " ";
   display: block;
@@ -179,7 +227,7 @@ a {
   position: relative;
   transform: skewY(-6deg) !important;
   z-index: 1;
-}
+} */
 
 .text-white {
     height: 1200px;
@@ -203,12 +251,6 @@ a {
   transition: ease-in-out 0.5s;
 }
 
-#vid {
-  margin: 0px auto 80px auto;
-  width: 100%;
-  z-index: 99;
-}
-
 .modal-dialog {
   margin: 240px auto !important;
 }
@@ -221,8 +263,6 @@ a {
     width: 100%;
     font-family: "Merriweather Sans", sans-serif;
     height: 120px;
-    margin-top: 40px;
-    max-width: 450px;
     padding: 20px;
   }
   

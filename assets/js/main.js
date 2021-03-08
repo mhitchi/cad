@@ -6,27 +6,28 @@ function scrollFunction() {
     document.getElementById("header").style.height = "100px";
     document.getElementById("logo").style.height = "120px";
     if (mobile.matches) {
-      document.getElementById("logo").style.margin = "0 137px";
+      document.getElementById("logo").style.margin = "0 120px";
     } else if (landscape.matches) {
-      document.getElementById("logo").style.margin = "0 0";
+      document.getElementById("logo").style.margin = "0 0 !important";
     }
     document.getElementById("header").style.backgroundColor = "rgba(0,0,0,0.75)";
   } else {
     document.getElementById("header").style.height = "160px";
     document.getElementById("logo").style.height = "220px";
     if (mobile.matches) {
-      document.getElementById("logo").style.margin = "0 90px";
+      document.getElementById("logo").style.margin = "0 80px";
     } else if (landscape.matches) {
-      document.getElementById("logo").style.margin = "0 0";
+      document.getElementById("logo").style.margin = "0 0 !important";
     }
     document.getElementById("header").style.backgroundColor = "rgba(0,0,0,1)";
   }
 }
-var mobile = window.matchMedia("(max-width: 700px)");
+
+var mobile = window.matchMedia("(max-width: 600px)");
 scrollFunction(mobile); // Call listener function at run time
 mobile.addListener(scrollFunction); // Attach listener function on state changes
 
-var landscape = window.matchMedia("(min-width: 701px)");
+var landscape = window.matchMedia("(min-width: 601px)");
 scrollFunction(landscape); // Call listener function at run time
 landscape.addListener(scrollFunction); // Attach listener function on state changes
 
@@ -67,7 +68,7 @@ function CountDownTimer(dt, id)
         var minutes = Math.floor((distance % _hour) / _minute);
         var seconds = Math.floor((distance % _minute) / _second);
 
-        document.getElementById(id).innerHTML = days /*+ ' days'*/;
+        // document.getElementById(id).innerHTML = days /*+ ' days'*/;
         //document.getElementById(id).innerHTML += hours + 'hrs ';
         //document.getElementById(id).innerHTML += minutes + 'mins ';
         //document.getElementById(id).innerHTML += seconds + 'secs';
