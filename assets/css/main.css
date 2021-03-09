@@ -248,6 +248,13 @@ a {
   transform: skewY(6deg);
 }
 
+.challenge {
+  border: 1px #505050 solid;
+  border-radius: 10px;
+  padding: 1rem 1rem 2rem 1rem;
+  margin: 5px;
+}
+
 .separator {
   margin-top: 4rem;
 }
