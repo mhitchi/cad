@@ -1,3 +1,6 @@
+var mobile = window.matchMedia("(max-width: 600px)");
+var landscape = window.matchMedia("(min-width: 601px)");
+
 // When the user scrolls down 100px from the top of the document, resize the header's font size
 window.onscroll = function() {scrollFunction()};
 
@@ -23,11 +26,9 @@ function scrollFunction() {
   }
 }
 
-var mobile = window.matchMedia("(max-width: 600px)");
 scrollFunction(mobile); // Call listener function at run time
 mobile.addListener(scrollFunction); // Attach listener function on state changes
 
-var landscape = window.matchMedia("(min-width: 601px)");
 scrollFunction(landscape); // Call listener function at run time
 landscape.addListener(scrollFunction); // Attach listener function on state changes
 
