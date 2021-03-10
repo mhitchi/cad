@@ -78,3 +78,23 @@ function CountDownTimer(dt, id)
     timer = setInterval(showRemaining, 10000);
 }
 
+//tab functionality
+//get array of .nav-link
+//forEach, on-click, make .tab-pane class active
+////remove active from other 2
+const navLinkArr = Array.from(document.getElementsByClassName("nav-link"));
+const tabArr = Array.from(document.getElementsByClassName("tab-pane"));
+
+navLinkArr.forEach(link => {
+  link.addEventListener("click", function () {
+    //if tabArr id fits in nav-link id
+    //add "active" to class
+    tabArr.forEach(tab => {
+      if(link.id.indexOf(tab.id) > -1){
+        tab.classList.add("active");
+      } else if(link.id.indexOf(tab.id) <= -1) {
+        tab.classList.remove("active");
+      }
+    })
+  })
+})
