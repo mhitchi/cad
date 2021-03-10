@@ -91,8 +91,10 @@ navLinkArr.forEach(link => {
     //add "active" to class
     tabArr.forEach(tab => {
       if(link.id.indexOf(tab.id) > -1){
+        tab.classList.add("show");
         tab.classList.add("active");
       } else if(link.id.indexOf(tab.id) <= -1) {
+        tab.classList.remove("show");
         tab.classList.remove("active");
       }
     })
