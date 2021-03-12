@@ -11,6 +11,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/main.css"/>
+        <link rel="stylesheet" href="assets/css/visualizations.css"/>
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
          <!-- Animate.css -->
@@ -243,8 +244,35 @@
                 </div>
                 <div class="tab-pane fade" id="schools" role="tabpanel" aria-labelledby="schools-content">
                     <div class="jumbotron">
-                        <h1>About...</h1>
-                        <p>One, two, three...</p>   
+                        <div>
+
+                            <div class="panel with-nav-tabs panel-default">
+                                <div class="panel-heading">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a href="#tab1default" data-toggle="tab">Maps</a></li>
+                                    <li><a href="#tab2default" data-toggle="tab">Chapters</a></li>
+                                    <li><a href="#tab3default" data-toggle="tab">Schools &amp;
+                                        Colleges</a></li>
+                                </ul>
+                                </div>
+                                <div class="panel-body">
+                                <div class="tab-content">
+                                    <div class="tab-pane fade in active" id="tab1default">
+                                    <div id="countycontainer" style="width: 100% margin: 0 auto; text-align: center;">
+                                        Downloading map...</div>
+                                    <div id="USMAP" style="height: width:100%;"></div>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab2default">
+                                    <div id="chaptercontainer" style="height: 400px; width: 500px; margin: 0 auto"></div>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab3default">
+                                    <div id="schools"></div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                            
                     </div>
                 </div>
                 <div class="tab-pane fade" id="chapters" role="tabpanel" aria-labelledby="chapters-content">
@@ -275,8 +303,14 @@
         </script>
         <script src="assets/js/main.js"></script>
         <script src="assets/js/countdown.js"></script>
+        <script src="assets/js/visualizations.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-        
+        <script src="https://code.highcharts.com/stock/highstock.js"></script>
+        <script src="https://code.highcharts.com/highcharts-more.js"></script>
+        <script src="https://code.highcharts.com/maps/modules/map.js"></script>
+        <script src="https://code.highcharts.com/maps/modules/data.js"></script>
+        <script src="https://code.highcharts.com/mapdata/countries/us/us-ga-all.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     </body>
 </html>
