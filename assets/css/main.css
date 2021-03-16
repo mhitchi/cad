@@ -270,7 +270,7 @@ a {
   margin: 240px auto !important;
 }
 
-.mega {
+.sticker {
   width: 100%;
 }
 
@@ -372,6 +372,7 @@ a {
 
   .hidden {
     display: none !important;
+    transition: ease-in-out 2s;
   }
 
   .jumbotron {

@@ -87,32 +87,40 @@ const tabArr = Array.from(document.getElementsByClassName("tab-pane"));
 
 navLinkArr.forEach(link => {
   link.addEventListener("click", function () {
-    //if tabArr id fits in nav-link id
-    //add "active" to class
+    //if tab id fits in nav-link id
+    //add "active" to tab class and nav-link class
     tabArr.forEach(tab => {
       if(link.id.indexOf(tab.id) > -1){
         tab.classList.add("show");
         tab.classList.add("active");
+        link.classList.add("active");
       } else if(link.id.indexOf(tab.id) <= -1) {
         tab.classList.remove("show");
         tab.classList.remove("active");
+        link.classList.remove("active");
       }
     })
   })
 })
 
-const stickerArr = Array.from(document.getElementsByClassName("mega"));
+const stickerArr = Array.from(document.getElementsByClassName("sticker"));
 const incentiveArr = Array.from(document.getElementsByClassName("incentive"));
 
 stickerArr.forEach(sticker => { 
   sticker.addEventListener("mouseenter", function() { 
     incentiveArr.forEach(incentive => {
-    incentive.classList.remove("hidden")
+    incentive.classList.remove("hidden");
+    incentive.classList.add("animate__fadeIn");
+    incentive.classList.remove("animate__fadeOut");
+    sticker.classList.remove("animate__pulse");
     }); 
   });
   sticker.addEventListener("mouseout", function() { 
     incentiveArr.forEach(incentive => {
-    incentive.classList.add("hidden")
+    incentive.classList.add("animate__fadeOut");
+    incentive.classList.add("hidden");
+    incentive.classList.remove("animate__fadeIn");
+    sticker.classList.add("animate__pulse");
     }); 
   });
 })
