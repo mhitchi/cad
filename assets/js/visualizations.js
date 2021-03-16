@@ -91,6 +91,8 @@ google.load('visualization', '1', {
 
  });
  */
+
+ //SCHOOLS SECTION WORKING
  $(function() {
    $
      .getJSON(
@@ -131,7 +133,7 @@ google.load('visualization', '1', {
            });
          //console.log(data.Rows[0]['Values']);
          //console.log(sortedschools);
-         $('#schools').highcharts({
+         $('#schoolscontainer').highcharts({
 
            chart: {
              type: 'bar',
@@ -180,7 +182,7 @@ google.load('visualization', '1', {
 
  });
  
- ///***
+ ///CHAPTERS MAP NOT WORKING
  Highcharts
    .getJSON(
      'https://gail.uga.edu/WebApi/Query/b6e11c1e-3b28-4d7a-a503-590fd33eaaf1',

@@ -137,12 +137,18 @@ span {
 
 .navbar ul {
     list-style-type: none;
+    margin-bottom: 35px;
+    text-align: right;
 }
 
 .nav-item {
     color: #ffffff;
     font-family: "Merriweather Sans", sans-serif;
-    margin: 10px;
+    margin: 5px;
+}
+
+.nav-item h2 {
+  font-size: 1.5rem !important;
 }
 
 .navbar-brand img {
@@ -151,10 +157,6 @@ span {
 
 .centered {
   margin-top: 6rem;
-}
-
-#countdown {
-  font-size: 2rem;
 }
 
 body {
@@ -190,6 +192,7 @@ body {
 
 .nav-link {
   background-color: #303030 !important;
+  border-radius: 5px 5px 0 0;
 }
 
 .nav-link:hover {
@@ -305,7 +308,7 @@ a {
     float: left;
     width: 1%;
     height: 20px;
-    background: #ef333b;
+    background: #ba0c2f;
     z-index: 333;
     border-radius: 5px;
   }
@@ -314,7 +317,7 @@ a {
     float: left;
     width: 16%;
     height: 20px;
-    background: #ef333b;
+    background: #ba0c2f;
     z-index: 333;
     border-radius: 5px;
   }
@@ -323,7 +326,7 @@ a {
     float: left;
     width: 80%;
     height: 20px;
-    background: #ef333b;
+    background: #ba0c2f;
     z-index: 333;
     border-radius: 5px;
   }
@@ -352,4 +355,17 @@ a {
 
   .goal-label {
     margin-bottom: .5rem;
+  }
+
+  .btn-danger {
+    background-color: #ef333b !important;
+    margin-top: 10px;
+  }
+
+  .btn-danger:hover {
+    background-color: #ba0c2f !important;
+  }
+
+  .btn-danger a:hover {
+    text-decoration: none;
   }
