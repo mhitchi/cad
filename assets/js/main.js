@@ -100,3 +100,19 @@ navLinkArr.forEach(link => {
     })
   })
 })
+
+const stickerArr = Array.from(document.getElementsByClassName("mega"));
+const incentiveArr = Array.from(document.getElementsByClassName("incentive"));
+
+stickerArr.forEach(sticker => { 
+  sticker.addEventListener("mouseenter", function() { 
+    incentiveArr.forEach(incentive => {
+    incentive.classList.remove("hidden")
+    }); 
+  });
+  sticker.addEventListener("mouseout", function() { 
+    incentiveArr.forEach(incentive => {
+    incentive.classList.add("hidden")
+    }); 
+  });
+})
