@@ -26,11 +26,11 @@ function scrollFunction() {
   }
 }
 
-scrollFunction(mobile); // Call listener function at run time
-mobile.addListener(scrollFunction); // Attach listener function on state changes
+// scrollFunction(mobile); // Call listener function at run time
+// mobile.addListener(scrollFunction); // Attach listener function on state changes
 
-scrollFunction(landscape); // Call listener function at run time
-landscape.addListener(scrollFunction); // Attach listener function on state changes
+// scrollFunction(landscape); // Call listener function at run time
+// landscape.addListener(scrollFunction); // Attach listener function on state changes
 
 const show = () => {
   document.getElementById("vid").src = "assets/images/placeholder-vid-bg03.jpg";
@@ -103,6 +103,7 @@ navLinkArr.forEach(link => {
   })
 })
 
+//pulsing sticker show incentive on mouseover
 const stickerArr = Array.from(document.getElementsByClassName("sticker"));
 const incentiveArr = Array.from(document.getElementsByClassName("incentive"));
 

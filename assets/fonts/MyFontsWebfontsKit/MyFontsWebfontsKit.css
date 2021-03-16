@@ -1,0 +1,42 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 4027692, 2021-03-16T13:59:40-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: HaveHeartTwo by Set Sail Studios
+ * URL: https://www.myfonts.com/fonts/set-sail-studios/have-heart/regular-two/
+ * 
+ * Webfont: HaveHeartSwash by Set Sail Studios
+ * URL: https://www.myfonts.com/fonts/set-sail-studios/have-heart/swash/
+ * 
+ * Webfont: HaveHeartOne by Set Sail Studios
+ * URL: https://www.myfonts.com/fonts/set-sail-studios/have-heart/regular-one/
+ * 
+ * 
+ * Webfonts copyright: Copyright (c) 2015 by Set Sail Studios. All rights reserved.
+ * 
+ * © 2021 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3d752c");
+  
+@font-face {
+  font-family: "HaveHeartTwo";
+  src: url('webFonts/HaveHeartTwo/font.woff2') format('woff2'), url('webFonts/HaveHeartTwo/font.woff') format('woff');
+}
+@font-face {
+  font-family: "HaveHeartSwash";
+  src: url('webFonts/HaveHeartSwash/font.woff2') format('woff2'), url('webFonts/HaveHeartSwash/font.woff') format('woff');
+}
+@font-face {
+  font-family: "HaveHeartOne";
+  src: url('webFonts/HaveHeartOne/font.woff2') format('woff2'), url('webFonts/HaveHeartOne/font.woff') format('woff');
+}
+

@@ -1,3 +1,11 @@
+.HaveHeartTwo {
+	font-family: HaveHeartTwo;
+}.HaveHeartSwash {
+	font-family: HaveHeartSwash;
+}.HaveHeartOne {
+	font-family: HaveHeartOne;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   #logo {
@@ -100,8 +108,7 @@
 }
 
 h1 {
-  font-family: "HaveHeartOne", "Permanent Marker";
-  src: url("../fonts/HaveHeartOne.ttf") format("truetype");
+  font-family: HaveHeartOne, "Permanent Marker";
 }
 
 h2 {
@@ -125,10 +132,9 @@ span {
 }
 
 .have-heart {
-  font-family: "HaveHeartOne", "Permanent Marker";
+  font-family: HaveHeartOne, "Permanent Marker";
   font-size: 6rem !important;
   text-transform: none;
-  src: url("../fonts/HaveHeartOne.ttf") format("truetype");
 }
 
 .navbar {
@@ -267,7 +273,7 @@ a {
 }
 
 .modal-dialog {
-  margin: 240px auto !important;
+  margin: 1rem auto !important;
 }
 
 .sticker {
