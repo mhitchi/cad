@@ -3,13 +3,22 @@ google.charts.setOnLoadCallback(drawBasic);
 
 function drawBasic() {
   var data = google.visualization.arrayToDataTable([
-    ['Area', 'Donations',],
-    ['New York City, NY', 8175000],
-    ['Los Angeles, CA', 3792000],
-    ['Chicago, IL', 2695000],
-    ['Houston, TX', 2099000],
-    ['Philadelphia, PA', 1526000]
+    ['Area', 'Donations',]
   ]);
+  //ajax call
+  //push results to data arr
+  $.getJSON(
+    'https://gail.uga.edu/WebApi/Query/6808291e-e67c-44c4-a15a-a6408b236c1b',
+    function(data) {
+      //make var schools an obj
+      var schools = {
+        record: []
+      };
+      //loop through data
+      console.log(data)
+    }
+  )
+
 
   var options = {
     title: '',
