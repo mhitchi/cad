@@ -15,7 +15,12 @@ function drawBasic() {
         record: []
       };
       //loop through data
-      console.log(data)
+      for (var i = 0; i < data.Rows.length; i++) {
+        var item = data.Rows[i];
+        schools.record.push([item['Values'][1],
+        parseInt(item['Values'][2])]);
+      }
+      console.log(schools)
     }
   )
 
