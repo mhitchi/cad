@@ -19,3 +19,7 @@
     font-family: 'TradeGothicLTPro-BdCn20'; 
     text-transform: uppercase;
 }
+
+.highcharts-xaxis-labels text {
+    color: #ffffff !important;
+}

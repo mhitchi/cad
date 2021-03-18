@@ -43,11 +43,16 @@
            chart: {
              type: 'bar',
              marginLeft: 150,
-             inverted: true
+             inverted: true,
+             backgroundColor: 'rgb(0,0,0)'
            },
 
            title: {
-             text: 'Donations per School'
+             text: 'Donations per School',
+             style: {
+                  color: '#fff',
+                  font: 'bold "Trade Gothic Pro", "Oswald", sans-serif'
+              }
            },
 
            xAxis: {
@@ -57,13 +62,21 @@
              scrollbar: {
                enabled: true
              },
-             tickLength: 0
+             tickLength: 0,
+             style: {
+                  color: '#fff',
+                  font: 'bold "Merriweather Sans", sans-serif'
+              }
            },
 
            yAxis: {
              title: {
-               text: "Donors"
-             }
+               text: "Donors",
+             },
+             style: {
+                  color: '#fff',
+                  font: 'bold "Merriweather Sans", sans-serif'
+              }
            },
 
            tooltip: {
