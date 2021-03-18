@@ -25,11 +25,15 @@ const noNeg = (number) => {
     let amtLeft;
     if (35000 - number >= 0) {
         amtLeft = 35000 - number;
-        console.log(number);
     } else {
         amtLeft = 0;
     }
     return amtLeft;
+}
+
+const percent = (goal, number) => {
+    let perc = (number/goal) * 100;
+    return parseInt(perc);
 }
 
 const getData = () => {
@@ -41,8 +45,10 @@ const getData = () => {
             //console.log(response);
             let total = parseInt(response.TotalGiftAmount);
             let newDonorAmountLeft = noNeg(parseInt(response.NewDonorCappedGiftAmount));
-            //USING STUDENTS AS PLACEHOLDER
-            let youngDonorAmountLeft = noNeg(parseInt(response.StudentCappedGiftAmount))
+            let youngDonorAmountLeft = noNeg(parseInt(response.GOLDCappedGiftAmount))
+
+            let newDonorPercent = percent(35000, parseInt(response.NewDonorCappedGiftAmount));
+            let youngDonorPercent = percent(35000, parseInt(response.GOLDCappedGiftAmount));
 
             //add commas
             addCommas(total);
@@ -52,6 +58,12 @@ const getData = () => {
             document.getElementById("totalGiftAmt").innerHTML = "$" + addCommas(total); + " Raised";
             document.getElementById("newDonorAmtLeft").innerHTML = "$" + addCommas(newDonorAmountLeft);
             document.getElementById("youngDonorAmtLeft").innerHTML = "$" + addCommas(youngDonorAmountLeft);
+            
+            document.getElementById("newDonorPercent").innerHTML = newDonorPercent + "%";
+            document.getElementById("progress01").style.width = newDonorPercent + "%";
+            document.getElementById("youngDonorPercent").innerHTML = youngDonorPercent + "%";
+            document.getElementById("progress02").style.width = youngDonorPercent + "%";
+            
         })
 }
 
