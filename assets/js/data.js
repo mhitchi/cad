@@ -18,6 +18,18 @@ const addCommas = number => {
         }
     }
     numberStr = numberArr.join("");
+    return numberStr;
+}
+
+const noNeg = (number) => {
+    let amtLeft;
+    if (35000 - number >= 0) {
+        amtLeft = 35000 - number;
+        console.log(number);
+    } else {
+        amtLeft = 0;
+    }
+    return amtLeft;
 }
 
 const getData = () => {
@@ -28,10 +40,18 @@ const getData = () => {
         }).then((response) => {
             //console.log(response);
             let total = parseInt(response.TotalGiftAmount);
+            let newDonorAmountLeft = noNeg(parseInt(response.NewDonorCappedGiftAmount));
+            //USING STUDENTS AS PLACEHOLDER
+            let youngDonorAmountLeft = noNeg(parseInt(response.StudentCappedGiftAmount))
 
+            //add commas
             addCommas(total);
+            addCommas(newDonorAmountLeft);
 
-            document.getElementById("totalGiftAmt").innerHTML = "$" + numberStr + " Raised";
+            //print to DOM
+            document.getElementById("totalGiftAmt").innerHTML = "$" + addCommas(total); + " Raised";
+            document.getElementById("newDonorAmtLeft").innerHTML = "$" + addCommas(newDonorAmountLeft);
+            document.getElementById("youngDonorAmtLeft").innerHTML = "$" + addCommas(youngDonorAmountLeft);
         })
 }
 
