@@ -164,14 +164,26 @@
                  },
 
                  title: {
-                   text: 'Donors per County'
+                   text: 'Donors per County',
+                   style: {
+                        color: '#fff',
+                        font: 'bold "Trade Gothic Pro", "Oswald", sans-serif'
+                    }
                  },
                  subtitle: {
-                   text: '* statistics updated after gifts are processed by gift accounting'
+                   text: '* statistics updated after gifts are processed by gift accounting',
+                   style: {
+                        color: '#fff',
+                        font: 'bold "Merriweather Sans", sans-serif'
+                    }
                  },
 
 
                  legend: {
+                   itemStyle: {
+                     color: '#fff',
+                      font: 'bold "Merriweather Sans", sans-serif'
+                   },
                    layout: 'vertical',
                    align: 'right',
                    verticalAlign: 'top',
@@ -179,12 +191,22 @@
                    backgroundColor: ( // theme
                        Highcharts.defaultOptions &&
                        Highcharts.defaultOptions.legend && Highcharts.defaultOptions.legend.backgroundColor) ||
-                     'rgba(255, 255, 255, 0.85)'
+                     'rgba(0, 0, 0, 0.85)'
                  },
 
                  mapNavigation: {
                    enabled: false
                  },
+
+                 chart: {
+                    backgroundColor: {
+                        linearGradient: [0, 0, 500, 500],
+                        stops: [
+                            [0, 'rgb(10, 10, 10)'],
+                            [1, 'rgb(0, 0, 0)']
+                        ]
+                    },
+                },
 
                  colorAxis: {
                    min: 0,
