@@ -49,6 +49,7 @@ const getData = () => {
 
             let newDonorPercent = percent(35000, parseInt(response.NewDonorCappedGiftAmount));
             let youngDonorPercent = percent(35000, parseInt(response.GOLDCappedGiftAmount));
+            let deiDonorPercent = percent(250, parseInt(response.DEIDonorCnt));
 
             //add commas
             addCommas(total);
@@ -58,11 +59,16 @@ const getData = () => {
             document.getElementById("totalGiftAmt").innerHTML = "$" + addCommas(total); + " Raised";
             document.getElementById("newDonorAmtLeft").innerHTML = "$" + addCommas(newDonorAmountLeft);
             document.getElementById("youngDonorAmtLeft").innerHTML = "$" + addCommas(youngDonorAmountLeft);
+            document.getElementById("newDonorCnt").innerHTML = response.NewDonorCnt;
+            document.getElementById("youngDonorCnt").innerHTML = response.GOLDDonorCnt;
+            document.getElementById("deiDonorCnt").innerHTML = response.DEIDonorCnt;
             
             document.getElementById("newDonorPercent").innerHTML = newDonorPercent + "%";
             document.getElementById("progress01").style.width = newDonorPercent + "%";
             document.getElementById("youngDonorPercent").innerHTML = youngDonorPercent + "%";
             document.getElementById("progress02").style.width = youngDonorPercent + "%";
+            document.getElementById("progress03").style.width = deiDonorPercent + "%";
+            document.getElementById("deiTotalGiftAmt").innerHTML = "$" + addCommas(parseInt(response.DEITotalGiftAmount));
             
         })
 }
