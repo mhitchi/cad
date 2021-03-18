@@ -64,10 +64,13 @@
             <div class="row diagonal bg-glory">
                 <div class="col-lg-3"></div>
                 <div class="col-lg-6 column align-center">
-                        <img id="vid" src="assets/images/placeholder-vid-bg02.jpg" alt="watch video" onmouseover="show()" onmouseout="hide()" data-toggle="modal" data-target="#videoModal"/>
+                    <div id="vid" class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_Zw5bLnEADI" allowfullscreen></iframe>
+                    </div>
+                        <!-- <img id="vid" src="assets/images/placeholder-vid-bg02.jpg" alt="watch video" onmouseover="show()" onmouseout="hide()" data-toggle="modal" data-target="#videoModal"/> -->
                         <h2 class="have-heart">Challenges</h2>
                     <!-- Modal -->
-                    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+                    <!-- <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="embed-responsive embed-responsive-16by9">
@@ -75,7 +78,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-3"></div>
             </div>
@@ -106,18 +109,18 @@
                                     Haven’t made a gift to UGA in a while? Make one during Giving Week, and we’ll match it. 
                                 </p>
                                 <div class=countdown-wrap>
-                                    <div class="goal">$34,650</div>
+                                    <div class="goal" id="goal1">$34,650</div>
                                         <span class="goal-label align-right">Available</span>
                                         <div class="glass">
                                             <div id="progress01">
                                             </div>
                                         </div>
                                         <div class="goal-stat">
-                                            <span class="goal-number">1%</span>
+                                            <span class="goal-number" id="percent1">1%</span>
                                             <span class="goal-label">Matched</span>
                                         </div>
                                         <div class="goal-stat">
-                                            <span class="goal-number">1</span>
+                                            <span class="goal-number" id="donors1">1</span>
                                             <span class="goal-label">Donors</span>
                                         </div>
                                         <div class="goal-stat">
@@ -137,18 +140,18 @@
                                     Calling all recent grads! If you graduated in the last ten years, we’ll match your gift during Giving Week. 
                                 </p>
                                 <div class=countdown-wrap>
-                                    <div class="goal">$33,350</div>
+                                    <div class="goal" id="goal2">$33,350</div>
                                         <span class="goal-label align-right">Available</span>
                                         <div class="glass">
                                             <div id="progress02">
                                             </div>
                                         </div>
                                         <div class="goal-stat">
-                                            <span class="goal-number">16%</span>
+                                            <span class="goal-number" id="percent2">16%</span>
                                             <span class="goal-label">Matched</span>
                                         </div>
                                         <div class="goal-stat">
-                                            <span class="goal-number">10</span>
+                                            <span class="goal-number" id="donors2">10</span>
                                             <span class="goal-label">Donors</span>
                                         </div>
                                         <div class="goal-stat">
@@ -181,18 +184,18 @@
                                     Let’s support all Dawgs. Maximize your impact by making a gift to support diversity initiatives at UGA. 
                                 </p>
                                 <div class=countdown-wrap>
-                                    <div class="goal">250</div>
+                                    <div class="goal" id="goal3">250</div>
                                         <span class="goal-label align-right">Goal</span>
                                         <div class="glass">
                                             <div id="progress03">
                                             </div>
                                         </div>
                                         <div class="goal-stat">
-                                            <span class="goal-number">200</span>
+                                            <span class="goal-number" id="donors3">200</span>
                                             <span class="goal-label">Donors</span>
                                         </div>
                                         <div class="goal-stat">
-                                            <span class="goal-number">$28,000</span>
+                                            <span class="goal-number" id="amt1">$28,000</span>
                                             <span class="goal-label">Raised</span>
                                         </div>
                                         <div class="goal-stat">
@@ -300,5 +303,6 @@
         <script src="assets/js/main.js"></script>
         <script src="assets/js/countdown.js"></script>
         <script src="assets/js/visualizations.js"></script>
+        <script src="assets/js/data.js"></script>
     </body>
 </html>
