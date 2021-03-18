@@ -1,3 +1,25 @@
+let numberStr;
+
+const addCommas = number => {
+    //make arr of total
+    numberStr = number.toString();
+    let numberArr = numberStr.split("");
+    //add ,'s
+    if (numberArr.length > 3){
+        //comma count = number of times arr length divisible by 3
+        let commaCount = numberArr.length/3;
+        let lastComma = numberArr.length - 3;
+        //place last comma
+        numberArr.splice(lastComma, 0, ",");
+        //place rest of commas
+        while (numberArr.indexOf(",") > 3){
+            let j = numberArr.indexOf(",") - 3;
+            numberArr.splice(j, 0, ",");
+        }
+    }
+    numberStr = numberArr.join("");
+}
+
 const getData = () => {
     $.ajax({
             url: "https://dev.dar.uga.edu/alumni/cad/test.json",
@@ -6,24 +28,10 @@ const getData = () => {
         }).then((response) => {
             //console.log(response);
             let total = parseInt(response.TotalGiftAmount);
-            //make arr of total
-            let totalStr = total.toString();
-            let totalArr = totalStr.split("");
-            //add ,'s
-            if (totalArr.length > 3){
-                //comma count = number of times arr length divisible by 3
-                let commaCount = totalArr.length/3;
-                let lastComma = totalArr.length - 3;
-                //place last comma
-                totalArr.splice(lastComma, 0, ",");
-                //place rest of commas
-                while (totalArr.indexOf(",") > 3){
-                    let j = totalArr.indexOf(",") - 3;
-                    totalArr.splice(j, 0, ",");
-                }
-            }
-            totalStr = totalArr.join("");
-            document.getElementById("totalGiftAmt").innerHTML = "$" + totalStr + " Raised";
+
+            addCommas(total);
+
+            document.getElementById("totalGiftAmt").innerHTML = "$" + numberStr + " Raised";
         })
 }
 
