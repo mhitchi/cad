@@ -83,21 +83,7 @@
                 <div class="col-lg-3"></div>
             </div>
             
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="nav justify-content-end">
-                        <li class="nav-item">
-                          <a class="nav-link active" id="challenges-tab" href="#challenges">Challenges</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="schools-tab" href="#schools">Campus Area</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="chapters-tab" href="#chapters">Chapters</a>
-                        </li>
-                      </ul>
-                </div>
-            </div>
+            <div class="row separator"></div>
             <div class="tab-content" id="tabContent">
                 <div class="tab-pane fade show active" id="challenges" role="tabpanel" aria-labelledby="challenges-content">
                     <div class="jumbotron bg-black">
@@ -147,7 +133,7 @@
                                             </div>
                                         </div>
                                         <div class="goal-stat">
-                                            <span class="goal-number" id="youngDonorPercent"></span>
+                                            <span class="goal-number" id="youngDonorPercent">16%</span>
                                             <span class="goal-label">Matched</span>
                                         </div>
                                         <div class="goal-stat">
@@ -167,7 +153,17 @@
                             </div>
                             <div class="col-lg-1"></div>
                         </div>
-                        <div class="row centered separator">
+                        <div class="row">
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-2">
+                                <img class="sticker animate__animated animate__pulse animate__infinite	infinite animate__slow	2s" src="./assets/images/megaphonePatch.png" alt=" "/>
+                            </div>
+                            <div class="col-lg-7 centered">
+                                <h4 class="incentive hidden animate__animated" >All alumni who donate during Giving Week will receive a 20% discount from the UGA Bookstore, valid in stores and online April 15 – 30. </h4>
+                            </div>
+                            <div class="col-lg-2"></div>
+                        </div>
+                        <div class="row centered">
                             <div class="col-lg-1"></div>
                             <div class="col-lg-5 challenge">
                                 <h3>Philanthropist for a Day</h3>
@@ -223,65 +219,31 @@
                         </div>
                         <div class="col-lg-1"></div>
                     </div>
-                </div>
-                <div class="tab-pane fade" id="schools" role="tabpanel" aria-labelledby="schools-content">
-                    <div class="jumbotron">
-                        <div>
-
-                            <div class="panel with-nav-tabs panel-default">
-                                <!-- <div class="panel-heading">
-                                <ul class="nav nav-tabs">
-                                    <li class="active"><a href="#tab1default" data-toggle="tab">Maps</a></li>
-                                    <li><a href="#tab2default" data-toggle="tab">Chapters</a></li>
-                                    <li><a href="#tab3default" data-toggle="tab">Schools &amp;
-                                        Colleges</a></li>
-                                </ul>
-                                </div> -->
-                                <div class="panel-body">
-                                    <div class="tab-content">
-                                        <h1>Stuff...</h1>
-                                        <div id="schoolsChart"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
+                    <!-- Start -->
+                    <div class="row centered">
                             <div class="col-lg-1"></div>
-                            <div class="col-lg-2">
-                                <img class="sticker animate__animated animate__pulse animate__infinite	infinite animate__slow	2s" src="./assets/images/megaphonePatch.png" alt=" "/>
+                            <div class="col-lg-5 challenge">
+                                <div id="schools"></div>
                             </div>
-                            <div class="col-lg-7 centered">
-                                <h4 class="incentive hidden animate__animated" >All alumni who donate during Giving Week will receive a 20% discount from the UGA Bookstore, valid in stores and online April 15 – 30. </h4>
-                            </div>
-                            <div class="col-lg-2"></div>
-                        </div>
-                            
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="chapters" role="tabpanel" aria-labelledby="chapters-content">
-                    <div class="jumbotron">
-                        <h1>Other Stuff...</h1>
-                        <div class="row">
-                            <div class="col-lg-2"></div>
-                            <div class="col-lg-8">
+                            <div class="col-lg-5 challenge">
                                 <div id="countycontainer" style="width: 100%; margin: 0 auto; text-align: center;">
                                     Downloading map...</div>
                                 <div id="USMAP" style="width:100%;"></div>
                             </div>
-                            <div class="col-lg-2"></div>
-                        </div>
-                         
-                        <div class="row separator">
                             <div class="col-lg-1"></div>
-                            <div class="col-lg-1">
-                                <img class="sticker animate__animated animate__pulse animate__infinite	infinite animate__slow	2s" src="./assets/images/gPatch.png" alt=" "/>
-                            </div>
-                            <div class="col-lg-8 centered">
-                                <h4 class="incentive hidden animate__animated" >Every donor will also receive an exclusive set of vintage UGA embroidered patches only available to Giving Week donors. </h4>
-                            </div>
-                            <div class="col-lg-2"></div>
-                        </div>               
+                        </div>
                     </div>
+                    <div class="row">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-1">
+                            <img class="sticker animate__animated animate__pulse animate__infinite	infinite animate__slow	2s" src="./assets/images/gPatch.png" alt=" "/>
+                        </div>
+                        <div class="col-lg-8 centered">
+                            <h4 class="incentive hidden animate__animated" >Every donor will also receive an exclusive set of vintage UGA embroidered patches only available to Giving Week donors. </h4>
+                        </div>
+                        <div class="col-lg-2"></div>
+                    </div>       
+                    <!-- End -->
                 </div>
             </div>
         </div>

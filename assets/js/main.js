@@ -87,8 +87,8 @@ const tabArr = Array.from(document.getElementsByClassName("tab-pane"));
 
 navLinkArr.forEach(link => {
   link.addEventListener("click", function () {
-    //if tab id fits in nav-link id
-    //add "active" to tab class and nav-link class
+    // if tab id fits in nav-link id
+    // add "active" to tab class and nav-link class
     tabArr.forEach(tab => {
       if(link.id.indexOf(tab.id) > -1){
         tab.classList.add("show");
