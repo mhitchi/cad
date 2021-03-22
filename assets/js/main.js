@@ -1,4 +1,4 @@
-var mobile = window.matchMedia("(max-width: 600px)");
+var portrait = window.matchMedia("(max-width: 600px)");
 var landscape = window.matchMedia("(min-width: 601px)");
 
 // When the user scrolls down 100px from the top of the document, resize the header's font size
@@ -7,24 +7,31 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
     document.getElementById("header").style.height = "100px";
-    document.getElementById("logo").style.height = "120px";
-    if (mobile.matches) {
-      document.getElementById("logo").style.margin = "0 120px";
+    if (portrait.matches) {
+      document.getElementById("logo").style.margin = "0 45px !important";
+      document.getElementById("logo").style.height = "120px";
     } else if (landscape.matches) {
       document.getElementById("logo").style.margin = "0 0 !important";
+      document.getElementById("logo").style.height = "120px";
+    } else {
+      document.getElementById("logo").style.height = "120px";
     }
     document.getElementById("header").style.backgroundColor = "rgba(0,0,0,0.75)";
   } else {
     document.getElementById("header").style.height = "160px";
-    document.getElementById("logo").style.height = "220px";
-    if (mobile.matches) {
-      document.getElementById("logo").style.margin = "0 80px";
+    if (portrait.matches) {
+      document.getElementById("logo").style.margin = "0 0";
+      document.getElementById("logo").style.height = "220px";
     } else if (landscape.matches) {
       document.getElementById("logo").style.margin = "0 0 !important";
+      document.getElementById("logo").style.height = "160px";
+    } else {
+      document.getElementById("logo").style.height = "220px";
     }
     document.getElementById("header").style.backgroundColor = "rgba(0,0,0,1)";
   }
 }
+
 
 // scrollFunction(mobile); // Call listener function at run time
 // mobile.addListener(scrollFunction); // Attach listener function on state changes

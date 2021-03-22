@@ -8,15 +8,21 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  #totalGiftAmt {
+    display: none;
+  }
   #logo {
-    margin: 0 90px;
+    margin: 0 40px;
   }
   #countdown {
     display: none;
   }
   h1 {
-    margin-top: 6rem !important;
-    font-size: 4rem !important; 
+    margin-top: 7rem !important;
+    font-size: 2.5rem !important; 
+  }
+  h2 {
+    font-size: 1.25rem !important;
   }
   #vid {
     margin: -10rem auto 1rem auto;
@@ -48,7 +54,7 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   #logo {
-    margin: 0 0;
+    margin: 0 0 !important;
   }
   #countdown {
     display: block;
@@ -116,7 +122,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.75rem !important;
+  font-size: 1.75rem;
 }
 
 h2,h3,h4 {
@@ -166,8 +172,8 @@ span {
 }
 
 .centered {
-  /* margin-top: 6rem; */
-  border-top: 2px #d7d4c6 solid;
+  margin-top: 5px;
+  /* border-top: 2px #d7d4c6 solid; */
   /* border-bottom: 2px #f1eee4 solid; */
 }
 
@@ -264,11 +270,10 @@ a {
 }
 
 .challenge {
-  border-left: 1px #d7d4c6 solid;
-  border-right: 1px #d7d4c6 solid;
-  /* border-radius: 10px; */
+  border: 1px #d7d4c6 solid;
+  border-radius: 10px;
   padding: 30px !important;
-  /* margin: 5px; */
+  margin: 5px;
 }
 
 .separator {
@@ -323,7 +328,7 @@ a {
     height: 20px;
     background: #ba0c2f;
     z-index: 333;
-
+    transition: ease-in-out 3s;
   }
 
   #progress02 {
@@ -332,7 +337,7 @@ a {
     height: 20px;
     background: #ba0c2f;
     z-index: 333;
- 
+    transition: ease-in-out 3s;
   }
 
   #progress03 {
@@ -341,7 +346,7 @@ a {
     height: 20px;
     background: #ba0c2f;
     z-index: 333;
-  
+    transition: ease-in-out 3s;
   }
   
   .goal-stat {
