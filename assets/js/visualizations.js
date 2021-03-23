@@ -353,7 +353,7 @@
            });
          //console.log(data.Rows[0]['Values']);
          //console.log(sortedchapters);
-         $('#chaptercontainer').highcharts({
+         $('#chapters').highcharts({
 
            chart: {
              type: 'bar',
@@ -399,5 +399,41 @@
 
          });
        });
+   google.load('visualization', '1', {
+      'packages': ['geochart']
+    });
+
+    google.setOnLoadCallback(drawVisualization);
+
+    function drawVisualization(states) {
+      $.getJSON('https://gail.uga.edu/WebApi/Query/a4407f69-0f7f-410f-b7ba-aa615ec53134', function(json) {
+
+        var states = [];
+        states.push(['State', 'Number of Donors']);
+        for (var i = 0; i < json.Rows.length; i++) {
+          var item = json.Rows[i];
+          //console.log(item);
+          state = [item['Values'][1], parseInt(item['Values'][2])];
+
+          states.push(state);
+        }
+
+
+
+        console.log(states);
+        var data = google.visualization.arrayToDataTable(states);
+
+        var opts = {
+          region: 'US',
+
+          resolution: 'provinces',
+
+          colors: ['#BA0C2F']
+        };
+        var geochart = new google.visualization.GeoChart(document
+          .getElementById('USMAP'));
+        geochart.draw(data, opts);
+      })
+    };
 
  });

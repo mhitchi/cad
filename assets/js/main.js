@@ -10,6 +10,8 @@ function scrollFunction() {
     if (portrait.matches) {
       document.getElementById("logo").style.margin = "0 45px !important";
       document.getElementById("logo").style.height = "120px";
+      // margin top not working
+      document.getElementById("EDC").style.marginTop = "2rem !important";
     } else if (landscape.matches) {
       document.getElementById("logo").style.margin = "0 0 !important";
       document.getElementById("logo").style.height = "120px";
@@ -21,7 +23,8 @@ function scrollFunction() {
     document.getElementById("header").style.height = "160px";
     if (portrait.matches) {
       document.getElementById("logo").style.margin = "0 0";
-      document.getElementById("logo").style.height = "220px";
+      document.getElementById("logo").style.height = "150px";
+      document.getElementById("totalGiftAmt").style.display = "block";
     } else if (landscape.matches) {
       document.getElementById("logo").style.margin = "0 0 !important";
       document.getElementById("logo").style.height = "160px";

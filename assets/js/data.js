@@ -56,7 +56,7 @@ const getData = () => {
             addCommas(newDonorAmountLeft);
 
             //print to DOM
-            document.getElementById("totalGiftAmt").innerHTML = "$" + addCommas(total); + " Raised";
+            document.getElementById("totalGiftAmt").innerHTML = "$" + addCommas(total) + " Raised";
             document.getElementById("newDonorAmtLeft").innerHTML = "$" + addCommas(newDonorAmountLeft);
             document.getElementById("youngDonorAmtLeft").innerHTML = "$" + addCommas(youngDonorAmountLeft);
             document.getElementById("newDonorCnt").innerHTML = response.NewDonorCnt;

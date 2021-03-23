@@ -29,8 +29,13 @@
                             <img id="logo" src="assets/images/wordmark.png" alt="logo"/>
                         </a>
                         <ul>
-                            <li class="nav-item"><h2 id="totalGiftAmt"></h2></li>
-                            <li class="nav-item"><h2 id="countdown"></h2></li>
+                            <li class="nav-item"><h2 id="totalGiftAmt">$</h2></li>
+                            <li class="nav-item"><h2 id="countdown">1 DAY TO GO</h2></li>
+                            <li class="nav-item">
+                                <div class="button">
+                                    <button type="button animate__animated animate__pulse animate__infinite	infinite animate__slow	2s" class="btn btn-danger" id="topBtn"><a href="#">GIVE NOW</a></button>
+                                </div>
+                            </li>
                             <!--<li class="nav-item"><span class="stat">100</span>total gifts given</li>-->
                             <!--<li class="nav-item"><span class="stat">$1640</span>total $ raised</li>-->
                         </ul>
@@ -43,7 +48,7 @@
             <div class="row">
                 <div class="col-lg-2 col-md-1"></div>
                 <div class="col-lg-8 col-md-10">
-                    <h1 class="align-center"> Every Dawg Counts </h1>
+                    <h1 class="align-center" id="EDC"> Every Dawg Counts </h1>
                     <h2 class="align-center">Bulldogs believe in tomorrow. Because tomorrow isn’t just another day. It’s hope. It’s potential. It’s a promise. </h2>
                 </div>
                 <div class="col-lg-2 col-md-1"></div>
@@ -105,15 +110,11 @@
                                             <span class="goal-number" id="newDonorCnt">1</span>
                                             <span class="goal-label">Donors</span>
                                         </div>
-                                        <div class="goal-stat">
-                                            <!-- <span class="goal-number">$34,650</span>
-                                            <span class="goal-label">Available</span> -->
-                                        </div>
                                         <div class="button">
                                             <button type="button" class="btn btn-danger"><a href="#">Give Now</a></button>
                                         </div>
                                 </div>
-                                <p><br><br><span>Individuals who have not made a gift to UGA since July 1, 2020 who donate during Giving Week will have their donation (up to $1,000) matched by the University of Georgia Foundation to a total of $35,000.</span>
+                                <p  class="finePrint"><br><br><span>Individuals who have not made a gift to UGA since July 1, 2020 who donate during Giving Week will have their donation (up to $1,000) matched by the University of Georgia Foundation to a total of $35,000.</span>
                                 </p>
                             </div>
                             <div class="col-lg-5 challenge">
@@ -136,15 +137,11 @@
                                             <span class="goal-number" id="youngDonorCnt">10</span>
                                             <span class="goal-label">Donors</span>
                                         </div>
-                                        <div class="goal-stat">
-                                            <!-- <span class="goal-number">$33,350</span>
-                                            <span class="goal-label">Available</span> -->
-                                        </div>
                                         <div class="button">
                                             <button type="button" class="btn btn-danger"><a href="#">Give Now</a></button>
                                         </div>
                                 </div>
-                                <p><br><br><span>UGA alumni who received their undergraduate degree in 2011 or later and who donate during Giving Week will have their donation (up to $1,000) matched by the University of Georgia Foundation to a total of $35,000.</span>
+                                <p class="finePrint"><br><br><span>UGA alumni who received their undergraduate degree in 2011 or later and who donate during Giving Week will have their donation (up to $1,000) matched by the University of Georgia Foundation to a total of $35,000.</span>
                                 </p>
                             </div>
                             <div class="col-lg-1"></div>
@@ -180,33 +177,37 @@
                                             <span class="goal-number" id="deiTotalGiftAmt">$28,000</span>
                                             <span class="goal-label">Raised</span>
                                         </div>
-                                        <div class="goal-stat">
-                                            <!-- <span class="goal-number">80%</span>
-                                            <span class="goal-label">Funded</span> -->
-                                        </div>
                                         <div class="button">
                                             <button type="button" class="btn btn-danger"><a href="#">Give Now</a></button>
                                         </div>
                                 </div>
-                                <p><br><br><span>250 gifts made during Giving Week to diversity, equity, and inclusion efforts on campus will unlock a $5,000 grant from the University of Georgia Foundation to the Black Alumni Scholarship Fund. Click HERE to view a list of eligible funds and make your gift!</span>
+                                <p class="finePrint"><br><br><span>250 gifts made during Giving Week to diversity, equity, and inclusion efforts on campus will unlock a $5,000 grant from the University of Georgia Foundation to the Black Alumni Scholarship Fund. Click HERE to view a list of eligible funds and make your gift!</span>
                                 </p>
                             </div>
                             <div class="col-lg-1"></div>
                         </div>
                         <!-- Start -->
                         <div class="row centered">
-                                <div class="col-lg-1"></div>
-                                <div class="col-lg-5 challenge">
-                                    <div id="schools"></div>
-                                </div>
-                                <div class="col-lg-5 challenge">
-                                    <div id="countycontainer" style="width: 100%; margin: 0 auto; text-align: center;">
-                                        Downloading map...</div>
-                                    <div id="USMAP" style="width:100%;"></div>
-                                </div>
-                                <div class="col-lg-1"></div>
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-5 challenge">
+                                <div id="schools"></div>
                             </div>
-                        </div>   
+                            <div class="col-lg-5 challenge">
+                                <div id="countycontainer" style="width: 100%; margin: 0 auto; text-align: center;">
+                                    Downloading map...</div>
+                            </div>
+                            <div class="col-lg-1"></div>
+                        </div>
+                        <div class="row centered">
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-5 challenge">
+                                <div id="chapters"></div>
+                            </div>
+                            <div class="col-lg-5 challenge">
+                                <div id="USMAP" style="width:100%;"></div>
+                            </div>
+                            <div class="col-lg-1"></div>
+                        </div> 
                     <!-- End -->
                     </div>
                 </div>
