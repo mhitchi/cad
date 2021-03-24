@@ -8,6 +8,12 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .container-fluid {
+    padding-right:0;
+    padding-left:0;
+    margin-right:auto;
+    margin-left:auto
+ }
   #totalGiftAmt {
     display: none;
   }
@@ -17,6 +23,11 @@
   #countdown {
     display: none;
   }
+  #topBtn .btn-dark {
+    background-color: rgb(0,0,0,.75) !important;
+    border: 1px #fff solid !important;
+  }
+
   h1 {
     margin-top: 7rem !important;
     font-size: 3.25rem !important; 
@@ -53,7 +64,11 @@
     margin: 0 8px !important;
   }
   .finePrint {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
+  }
+  .giveBtn .btn {
+    margin-top: 2rem !important;
+    margin-left: 3.5rem;
   }
 }
 
@@ -64,6 +79,11 @@
   }
   #countdown {
     display: block;
+  }
+  #topBtn .btn-dark {
+    background-color: rgb(0,0,0,.75) !important;
+    border: 1px #fff solid !important;
+    margin-top: 20px;
   }
   h1 {
     margin-top: 6rem !important;
@@ -82,6 +102,9 @@
   }
   .bg-glory {
     margin-top: 3rem;
+  }
+  .giveBtn .btn {
+    float: right;
   }
 }
 
@@ -306,7 +329,7 @@ a {
     width: 100%;
     font-family: "Merriweather Sans", sans-serif;
     height: 120px;
-    padding: 20px;
+    /* padding: 20px; */
   }
   
   .goal {
@@ -348,7 +371,7 @@ a {
 
   #progress03 {
     float: left;
-    width: 80%;
+    width: 10%;
     height: 20px;
     background: #ba0c2f;
     z-index: 333;
@@ -403,25 +426,37 @@ a {
     background-color: #000000 !important;
   }
 
-  #topBtn .btn-dark {
-    background-color: rgb(0,0,0,.75) !important;
-    border: 1px #fff solid !important;
-    margin-top: 20px;
-  }
-
   #topBtn a {
     font-family: 'TradeGothicLTPro-BdCn20'; 
     font-size: 20px !important;
   }
 
-  g rect {
+  #USMAP g rect {
     fill: rgb(0,0,0)
   }
 
-  g rect.highcharts-point {
-    fill: #ba0c2f;
-  }
+.highcharts-xaxis-labels text {
+  color: #fff !important;
+  fill: #fff !important;
+}
+.highcharts-yaxis-labels text {
+  color: #fff !important;
+  fill: #fff !important;
+}
 
-  .giveBtn .btn {
-    float: right;
-  }
+#countycontainer .highcharts-legend .highcharts-legend-box {
+  margin-top: 50px;
+}
+
+.highcharts-axis-title {
+  color: #fff !important;
+  fill: #fff !important;
+}
+
+#schools .highcharts-legend {
+  display: none;
+}
+
+#chapters .highcharts-legend {
+  display: none;
+}
