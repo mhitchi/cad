@@ -434,10 +434,15 @@ a {
   #USMAP g rect {
     fill: rgb(0,0,0)
   }
-
+/*NOT WORKING .highcharts-axis-labels {
+  width: 40px !important;
+  text-overflow: ellipsis;
+} */
 .highcharts-xaxis-labels text {
   color: #fff !important;
   fill: #fff !important;
+  width: 40px !important;
+  text-overflow: ellipsis;
 }
 .highcharts-yaxis-labels text {
   color: #fff !important;
@@ -445,7 +450,7 @@ a {
 }
 
 #countycontainer .highcharts-legend .highcharts-legend-box {
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 .highcharts-axis-title {
@@ -459,4 +464,7 @@ a {
 
 #chapters .highcharts-legend {
   display: none;
+}
+.highcharts-bar-series {
+  min-width: 100px;
 }

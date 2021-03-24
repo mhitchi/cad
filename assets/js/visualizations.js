@@ -42,9 +42,10 @@
 
            chart: {
              type: 'bar',
-             marginLeft: 150,
+             marginLeft: 100,
              inverted: true,
-             backgroundColor: 'rgb(0,0,0)'
+             backgroundColor: 'rgb(0,0,0)',
+             spacingLeft: 0
            },
 
            title: {
@@ -58,7 +59,7 @@
            xAxis: {
              type: 'category',
              min: 0,
-             max: 10,
+             max: 8,
              scrollbar: {
                enabled: true
              },
@@ -197,9 +198,11 @@
                      color: '#fff',
                       font: 'bold "Merriweather Sans", sans-serif'
                    },
+                   x: 0,
+                    y: 100,
                    layout: 'vertical',
                    align: 'right',
-                   verticalAlign: 'top',
+                   verticalAlign: 'center',
                    floating: true,
                    backgroundColor: ( // theme
                        Highcharts.defaultOptions &&
@@ -357,9 +360,10 @@
 
            chart: {
              type: 'bar',
-             marginLeft: 150,
+             marginLeft: 100,
              inverted: true,
-             backgroundColor: 'rgb(0,0,0)'
+             backgroundColor: 'rgb(0,0,0)',
+             spacingLeft: 0
            },
 
            title: {
@@ -406,6 +410,7 @@
 
          });
        });
+
    google.load('visualization', '1', {
       'packages': ['geochart']
     });
