@@ -32,7 +32,9 @@ function scrollFunction() {
       document.getElementById("logo").style.height = "220px";
     }
     document.getElementById("header").style.backgroundColor = "rgba(0,0,0,1)";
+    
   }
+  
 }
 
 
