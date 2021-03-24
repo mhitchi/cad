@@ -405,4 +405,6 @@ a {
 
   #topBtn {
     font-family: 'TradeGothicLTPro-BdCn20'; 
+    position: relative;
+    margin-right: 0px;
   }

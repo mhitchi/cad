@@ -358,11 +358,16 @@
            chart: {
              type: 'bar',
              marginLeft: 150,
-             inverted: true
+             inverted: true,
+             backgroundColor: 'rgb(0,0,0)'
            },
 
            title: {
-             text: 'Donations per Chapter'
+             text: 'Donations per Chapter',
+             style: {
+                  color: '#fff',
+                  font: 'bold "Trade Gothic Pro", "Oswald", sans-serif'
+              }
            },
 
            xAxis: {
@@ -372,12 +377,14 @@
              scrollbar: {
                enabled: true
              },
-             tickLength: 0
+             tickLength: 0,
+             color: '#fff'
            },
 
            yAxis: {
              title: {
-               text: "Count"
+               text: "Count",
+               color: '#fff'
              }
            },
 
