@@ -408,3 +408,11 @@ a {
     position: relative;
     margin-right: 0px;
   }
+
+  g rect {
+    fill: rgb(0,0,0)
+  }
+
+  g rect.highcharts-point {
+    fill: #ba0c2f;
+  }
