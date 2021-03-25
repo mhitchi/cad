@@ -191,7 +191,18 @@
                         font: 'bold "Merriweather Sans", sans-serif'
                     }
                  },
-
+                //   responsive: {
+                //     rules: [{
+                //         chartOptions: {
+                //             legend: {
+                //                 enabled: false
+                //             }
+                //         },
+                //         condition: {
+                //             maxWidth: 500
+                //         }
+                //     }]
+                // },
 
                  legend: {
                    itemStyle: {
@@ -245,12 +256,12 @@
                    }, {
                      from: 101,
                      to: 200,
-                     color: '#BA0C2F'
+                     color: '#ba0c2f'
 
 
                    }, {
                      from: 201,
-                     color: 'black'
+                     color: '#ef333b'
 
 
                    }],
@@ -440,7 +451,9 @@
 
           resolution: 'provinces',
 
-          colors: ['#BA0C2F']
+          colors: ['#BA0C2F'],
+
+          backgroundColor: { fill:'transparent' }
         };
         var geochart = new google.visualization.GeoChart(document
           .getElementById('USMAP'));

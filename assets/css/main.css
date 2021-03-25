@@ -20,11 +20,13 @@
     margin-left:auto
  }
   #totalGiftAmt {
-    display: none;
+    /* display: none; */
+    margin-top: 2rem;
   }
   #logo {
     /* margin: 0 40px; */
-    max-height: 125px;
+    max-height: 150px;
+    top: 0px;
   }
   #countdown {
     display: none;
@@ -35,7 +37,7 @@
   }
 
   h1 {
-    margin-top: 4rem !important;
+    margin-top: 2rem !important;
     font-size: 3.25rem !important; 
   }
   h2 {
@@ -76,6 +78,9 @@
   .giveBtn .btn {
     margin-top: 2rem !important;
     margin-left: 3.5rem;
+  }
+  #countycontainer .highcharts-legend-item text {
+    display: none;
   }
 }
 
@@ -449,9 +454,9 @@ a {
     font-size: 20px !important;
   }
 
-  #USMAP g rect {
+  /* #USMAP g rect {
     fill: rgb(0,0,0)
-  }
+  } */
 /*NOT WORKING .highcharts-axis-labels {
   width: 40px !important;
   text-overflow: ellipsis;
