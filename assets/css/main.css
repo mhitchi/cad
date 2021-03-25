@@ -6,6 +6,11 @@
 	font-family: HaveHeartOne;
 }
 
+/* for i0s mobile */
+  #header {
+    top: 0px !important;
+  }
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .container-fluid {
@@ -136,6 +141,9 @@
 @media only screen and (min-width: 1200px) {
   h1 {
   font-size: 5.5rem !important; 
+  }
+  .bg-glory {
+    margin-top: 7rem;
   }
 }
 
