@@ -491,3 +491,9 @@ a {
 .highcharts-bar-series {
   min-width: 100px;
 }
+
+.pfad img{
+  width: 40%;
+  float: left;
+  margin: 10px;
+}
