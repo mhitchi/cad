@@ -23,7 +23,8 @@
     display: none;
   }
   #logo {
-    margin: 0 40px;
+    /* margin: 0 40px; */
+    max-height: 125px;
   }
   #countdown {
     display: none;
@@ -34,7 +35,7 @@
   }
 
   h1 {
-    margin-top: 7rem !important;
+    margin-top: 4rem !important;
     font-size: 3.25rem !important; 
   }
   h2 {
@@ -53,6 +54,7 @@
   }
   .challenge {
     margin-top: 5rem;
+    padding: 10px;
   }
   .glass {
     width: 100% !important;
@@ -111,6 +113,9 @@
   .giveBtn .btn {
     float: right;
   }
+  .challenge {
+    padding: 15px !important;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -127,13 +132,19 @@
       margin: 4rem 0 -1rem 4rem;
       width: 80%;
     }
+  .challenge {
+    padding: 20px !important;
   }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   #vid {
     margin: -10rem auto 1rem auto;
     width: 100% !important;
+  }
+  .challenge {
+    padding: 30px !important;
   }
 }
 
@@ -309,7 +320,6 @@ a {
 .challenge {
   border: 1px #d7d4c6 solid;
   border-radius: 10px;
-  padding: 30px !important;
   margin: 5px;
 }
 

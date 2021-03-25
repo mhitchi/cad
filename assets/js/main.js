@@ -8,7 +8,7 @@ function scrollFunction() {
   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
     document.getElementById("header").style.height = "100px";
     if (portrait.matches) {
-      document.getElementById("logo").style.margin = "0 45px !important";
+      // document.getElementById("logo").style.margin = "0 45px !important";
       document.getElementById("logo").style.height = "120px";
       // margin top not working
       document.getElementById("EDC").style.marginTop = "2rem !important";
