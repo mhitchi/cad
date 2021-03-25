@@ -240,30 +240,26 @@
                    dataClasses: [{
                      from: 1,
                      to: 5,
-                     color: '#efe5db'
+                     color: '#f5f5f5'
                    }, {
                      from: 6,
                      to: 10,
-                     color: '#cdc5bc'
+                     color: '#e9e6d6'
                    }, {
                      from: 11,
                      to: 50,
-                     color: '#b6afa7'
+                     color: '#e9cdc6'
                    }, , {
                      from: 51,
                      to: 100,
-                     color: '#85807a'
+                     color: '#dc8d90'
                    }, {
                      from: 101,
                      to: 200,
-                     color: '#ba0c2f'
-
-
+                     color: '#c94957'
                    }, {
                      from: 201,
-                     color: '#ef333b'
-
-
+                     color: '#ba0c2f'
                    }],
                    /*
                    stops: [
@@ -453,7 +449,9 @@
 
           colors: ['#BA0C2F'],
 
-          backgroundColor: { fill:'transparent' }
+          backgroundColor: { fill:'transparent' },
+
+          chartArea: { width: '100%' }
         };
         var geochart = new google.visualization.GeoChart(document
           .getElementById('USMAP'));
