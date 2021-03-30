@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,12 +29,14 @@
         <link rel="stylesheet" href="assets/css/visualizations.css"/>
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+        <!-- Magnific Popup core CSS file -->
+        <link rel="stylesheet" href="assets/css/mag-popup.css">    
          <!-- Animate.css -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&display=swap">
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"> -->
         <link rel="stylesheet" type="text/css" href="assets/fonts/Trade_Gothic_Webkit/Trade_Gothic_Webkit.css">
         <link rel="stylesheet" type="text/css" href="assets/fonts/MyFontsWebfontsKit/MyFontsWebfontsKit.css">
     </head>
@@ -85,7 +87,7 @@
                 <div class="col-lg-3"></div>
                 <div class="col-lg-6 column align-center">
                     <div id="vid" class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_Zw5bLnEADI" allowfullscreen></iframe>
+                        <iframe title="2021 Giving Week Video" class="embed-responsive-item" src="https://www.youtube.com/embed/_Zw5bLnEADI" allowfullscreen></iframe>
                     </div>
                         <!-- <img id="vid" src="assets/images/placeholder-vid-bg02.jpg" alt="watch video" onmouseover="show()" onmouseout="hide()" data-toggle="modal" data-target="#videoModal"/> -->
                         <h2 class="have-heart">Challenges</h2>
@@ -104,16 +106,13 @@
             </div>
             
             <div class="row separator"></div>
-            <div class="tab-content" id="tabContent">
-                <div class="tab-pane fade show active" id="challenges" role="tabpanel" aria-labelledby="challenges-content">
+                <div id="challenges">
                     <div class="jumbotron bg-black">
                         <div class="row centered">
                             <div class="col-lg-1"></div>
                             <div class="col-lg-5 challenge">
                                 <h3>New Donor Challenge</h3>
-                                <p>
-                                    Haven’t made a gift to UGA in a while? Make one during Giving Week, and we’ll match it. 
-                                </p>
+                                <p>Haven’t made a gift to UGA in a while? Make one during Giving Week, and we’ll match it. </p>
                                 <div class=countdown-wrap>
                                     <div class="goal" id="newDonorAmtLeft"></div>
                                         <span class="goal-label align-right">Available</span>
@@ -173,7 +172,7 @@
                                     Every gift counts—especially now. Make a gift of any amount this week for the chance to choose where to give $1,000
                                 </p>
                                 <div class="pfad">
-                                    <img src="assets/images/nic-bouwman.jpg"/>
+                                    <img src="assets/images/nic-bouwman.jpg" alt="Philanthropist for a Day"/>
                                     <p style="display: inline">Nic Bouwman gave $XXXXXX<br>to Terry School of Business</p>
                                 </div>
                                 <p><br><br><span>Each day from Monday, April 19 through Friday, April 23, two Giving Week donors will be randomly selected to decide what area on campus will receive $1,000 from the University of Georgia Board of Trustees. To be eligible, donors must submit at least one social media handle when making their gift. </span>
@@ -233,7 +232,6 @@
                         </div> 
                     <!-- End -->
                     </div>
-                </div>
                 <!-- <div class="row">
                     <div class="col-lg-1"></div>
                     <div class="col-lg-2">
@@ -274,7 +272,7 @@
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
             crossorigin="anonymous">
         </script>>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
         <script src="https://code.highcharts.com/stock/highstock.js"></script>
         <script src="https://code.highcharts.com/highcharts-more.js"></script>
@@ -286,5 +284,8 @@
         <script src="assets/js/countdown.js"></script>
         <script src="assets/js/visualizations.js"></script>
         <script src="assets/js/data.js"></script>
+        <script src="assets/js/popup.js"></script>
+        <!-- Magnific Popup core JS file -->
+        <script src="assets/js/jquery-mag-popup.js"></script>
     </body>
 </html>

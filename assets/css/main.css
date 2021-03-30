@@ -121,6 +121,9 @@
   .challenge {
     padding: 15px !important;
   }
+  #USMAP g {
+    margin: 0 auto !important;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -378,7 +381,7 @@ a {
     float: left;
     width: 1%;
     height: 20px;
-    background: #ba0c2f;
+    background: #ef333b;
     z-index: 333;
     transition: ease-in-out 10s;
   }
@@ -387,7 +390,7 @@ a {
     float: left;
     width: 16%;
     height: 20px;
-    background: #ba0c2f;
+    background: #ef333b;
     z-index: 333;
     transition: ease-in-out 10s;
   }
@@ -396,7 +399,7 @@ a {
     float: left;
     width: 10%;
     height: 20px;
-    background: #ba0c2f;
+    background: #ef333b;
     z-index: 333;
     transition: ease-in-out 10s;
   }
@@ -428,12 +431,12 @@ a {
   }
 
   .btn-danger {
-    background-color: #ef333b !important;
+    background-color: #ba0c2f !important;
     margin-top: 10px;
   }
 
   .btn-danger:hover {
-    background-color: #ba0c2f !important;
+    background-color: #ef333b !important;
   }
 
   .btn-danger a:hover {
