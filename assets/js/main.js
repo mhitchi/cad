@@ -2,6 +2,11 @@ $(document).ready(function(){
   var portrait = window.matchMedia("(max-width: 600px)");
   var landscape = window.matchMedia("(min-width: 601px)");
 
+  $('.popup-link').magnificPopup({
+    type: 'video'
+    // other options
+  });
+
   // When the user scrolls down 100px from the top of the document, resize the header's font size
   window.onscroll = function() {scrollFunction()};
 

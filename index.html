@@ -30,9 +30,9 @@
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
         <!-- Magnific Popup core CSS file -->
-        <link rel="stylesheet" href="assets/css/mag-popup.css">    
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">    
          <!-- Animate.css -->
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&display=swap">
@@ -86,8 +86,16 @@
             <div class="row diagonal bg-glory">
                 <div class="col-lg-3"></div>
                 <div class="col-lg-6 column align-center">
-                    <div id="vid" class="embed-responsive embed-responsive-16by9">
-                        <iframe title="2021 Giving Week Video" class="embed-responsive-item" src="https://www.youtube.com/embed/_Zw5bLnEADI" allowfullscreen></iframe>
+                    <!-- MAGNIFIC <img id="vid" class="popup-link" src="assets/images/placeholder-vid-bg02.jpg" data-mfp-src="https://www.youtube.com/embed/_Zw5bLnEADI"/> -->
+                    <button class="btn" id="btn-modal">OPEN</button>
+
+                    <div class="overlay" id="overlay"></div>
+                    <div class="modal" id="modal">
+                        <div id="vid" class="embed-responsive embed-responsive-16by9">
+                            <iframe title="2021 Giving Week Video" class="embed-responsive-item" src="https://www.youtube.com/embed/_Zw5bLnEADI" allowfullscreen></iframe>
+                        </div>
+                        <button class="modal-close-btn" id="close-btn"><i class="fa fa-times" title="close"></i></button>
+                        CLOSE
                     </div>
                         <!-- <img id="vid" src="assets/images/placeholder-vid-bg02.jpg" alt="watch video" onmouseover="show()" onmouseout="hide()" data-toggle="modal" data-target="#videoModal"/> -->
                         <h2 class="have-heart">Challenges</h2>
@@ -263,6 +271,45 @@
                     </div>
                     <div class="col-lg-2"></div>
                 </div>     -->
+                <div class="row">
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-4">
+                        <h2 class="have-heart align-center">Giving Day</h2>
+                    </div>
+                    <div class="col-lg-4"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5 challenge">
+                        <h3>Calling all [SCUD] Dawgs!<br>It's [SCUD] giving day!</h3>
+                        <div class="button giveBtn">
+                            <button type="button" class="btn btn-danger"><a href="#">Give Now</a></button>
+                        </div>                        
+                    </div>
+                    <div class="col-lg-5 challenge">
+                        <h3>Calling all [SCUD] Dawgs!<br>It's [SCUD] giving day!</h3>
+                        <div class="button giveBtn">
+                            <button type="button" class="btn btn-danger"><a href="#">Give Now</a></button>
+                        </div>     
+                    </div>
+                    <div class="col-lg-1"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5 challenge">
+                        <h3>Calling all [SCUD] Dawgs!<br>It's [SCUD] giving day!</h3>
+                        <div class="button giveBtn">
+                            <button type="button" class="btn btn-danger"><a href="#">Give Now</a></button>
+                        </div>                        
+                    </div>
+                    <div class="col-lg-5 challenge">
+                        <h3>Calling all [SCUD] Dawgs!<br>It's [SCUD] giving day!</h3>
+                        <div class="button giveBtn">
+                            <button type="button" class="btn btn-danger"><a href="#">Give Now</a></button>
+                        </div>     
+                    </div>
+                    <div class="col-lg-1"></div>
+                </div>
             </div>
         </div>
 
@@ -286,6 +333,6 @@
         <script src="assets/js/data.js"></script>
         <script src="assets/js/popup.js"></script>
         <!-- Magnific Popup core JS file -->
-        <script src="assets/js/jquery-mag-popup.js"></script>
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
     </body>
 </html>
