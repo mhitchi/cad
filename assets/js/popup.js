@@ -12,13 +12,26 @@
 //   document.getElementById('modal').classList.remove('is-visible');
 // });
 let imgBtn = document.getElementById('vid');
-let modal = document.getElementById('modal');
+let modal = document.getElementById('vidModal');
 
 imgBtn.addEventListener('click', () => {
   modal.classList.add('is-visible');
   modal.style.display = "block";
 })
 
-// const showModal = () => {
-//   modal.addClass = "is-visible";
-// }
+
+while(modal.classList.contains("is-visible")){
+  //not console logging
+  console.log("visible")
+  window.onclick = closeModal(event);
+}
+
+
+const closeModal = (event) => {
+  if (event.target.id !== "vidModal") {
+    //not console logging
+    console.log("nope")
+    modal.classList.remove('is-visible');
+    modal.style.display = "none";
+  }
+}
