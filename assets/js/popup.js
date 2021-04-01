@@ -19,17 +19,23 @@ imgBtn.addEventListener('click', () => {
   modal.classList.add('is-visible');
   modal.style.display = "block";
   overlay.classList.add('is-visible');
-})
-
-window.onclick = closeModal(event);
-
-const closeModal = (event) => {
-  //not console logging
-  console.log('closing')
-  if (event.target.id !== "vidModal") {
-    //not console logging
-    console.log("nope")
+  overlay.addEventListener('click', () => {
+    console.log("closing")
     modal.classList.remove('is-visible');
     modal.style.display = "none";
-  }
-}
+    overlay.classList.remove('is-visible');
+  })
+})
+
+// window.onclick = closeModal(event);
+
+// const closeModal = (event) => {
+//   //not console logging
+//   console.log('closing')
+//   if (event.target.id !== "vidModal") {
+//     //not console logging
+//     console.log("nope")
+//     modal.classList.remove('is-visible');
+//     modal.style.display = "none";
+//   }
+// }
