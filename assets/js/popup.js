@@ -15,17 +15,30 @@ let imgBtn = document.getElementById('vid');
 let modal = document.getElementById('vidModal');
 let overlay = document.getElementById('overlay');
 
-imgBtn.addEventListener('click', () => {
-  modal.classList.add('is-visible');
+// imgBtn.addEventListener('click', () => {
+//   modal.classList.add('is-visible');
+//   modal.style.display = "block";
+//   overlay.classList.add('is-visible');
+//   // overlay.addEventListener('click', () => {
+//   //   console.log("closing")
+//   //   modal.classList.remove('is-visible');
+//   //   modal.style.display = "none";
+//   //   overlay.classList.remove('is-visible');
+//   // })
+// })
+
+document.onclick = function(e) {
+  if(e.target.id = "vid") {
+    modal.classList.add('is-visible');
   modal.style.display = "block";
   overlay.classList.add('is-visible');
-  overlay.addEventListener('click', () => {
+  } else if(e.target.id = "overlay") {
     console.log("closing")
     modal.classList.remove('is-visible');
     modal.style.display = "none";
     overlay.classList.remove('is-visible');
-  })
-})
+  }
+}
 
 // window.onclick = closeModal(event);
 
