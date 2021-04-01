@@ -13,38 +13,43 @@
 // });
 let imgBtn = document.getElementById('vid');
 let modal = document.getElementById('vidModal');
-let overlay = document.getElementById('overlay');
+// let overlay = document.getElementById('overlay');
 
-// imgBtn.addEventListener('click', () => {
-//   modal.classList.add('is-visible');
-//   modal.style.display = "block";
-//   overlay.classList.add('is-visible');
-//   // overlay.addEventListener('click', () => {
-//   //   console.log("closing")
-//   //   modal.classList.remove('is-visible');
-//   //   modal.style.display = "none";
-//   //   overlay.classList.remove('is-visible');
-//   // })
-// })
-
-document.onclick = function(e) {
-  if (e.target.id = "vid") {
-    console.log(e.target.id);
-    modal.classList.add('is-visible');
-    modal.style.display = "block";
-    // overlay.classList.add('is-visible');
-  } else if (e.target.id = "vidModal") {
-    console.log(e.target.id);
-    modal.classList.add('is-visible');
-    modal.style.display = "block";
-    // overlay.classList.add('is-visible');
-  } else {
-    console.log(e.target.id)
-    modal.classList.remove('is-visible');
-    modal.style.display = "none";
-    // overlay.classList.remove('is-visible');
+imgBtn.addEventListener('click', () => {
+  modal.classList.add('is-visible');
+  modal.style.display = "block";
+  // overlay.classList.add('is-visible');
+  document.onclick = function(e) {
+    if (e.target.id == "vidModal" || e.target.id == "vid") {
+      console.log(e.target.id)
+      modal.classList.add('is-visible');
+      modal.style.display = "block";
+    } else {
+      console.log(e.target.id)
+      modal.classList.remove('is-visible');
+      modal.style.display = "none";
+    }
   }
-}
+})
+
+// document.onclick = function(e) {
+//   if (e.target.id = "vid") {
+//     console.log(e.target.id);
+//     modal.classList.add('is-visible');
+//     modal.style.display = "block";
+//     // overlay.classList.add('is-visible');
+//   } else if (e.target.id = "vidModal") {
+//     console.log(e.target.id);
+//     modal.classList.add('is-visible');
+//     modal.style.display = "block";
+//     // overlay.classList.add('is-visible');
+//   } else {
+//     console.log(e.target.id)
+//     modal.classList.remove('is-visible');
+//     modal.style.display = "none";
+//     // overlay.classList.remove('is-visible');
+//   }
+// }
 
 // window.onclick = closeModal(event);
 
