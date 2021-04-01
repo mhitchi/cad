@@ -13,21 +13,19 @@
 // });
 let imgBtn = document.getElementById('vid');
 let modal = document.getElementById('vidModal');
+let overlay = document.getElementById('overlay');
 
 imgBtn.addEventListener('click', () => {
   modal.classList.add('is-visible');
   modal.style.display = "block";
+  overlay.classList.add('is-visible');
 })
 
-
-while(modal.classList.contains("is-visible")){
-  //not console logging
-  console.log("visible")
-  window.onclick = closeModal(event);
-}
-
+window.onclick = closeModal(event);
 
 const closeModal = (event) => {
+  //not console logging
+  console.log('closing')
   if (event.target.id !== "vidModal") {
     //not console logging
     console.log("nope")
