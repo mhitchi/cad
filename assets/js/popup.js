@@ -13,6 +13,7 @@ imgBtn.addEventListener('click', () => {
     } else {
       // console.log(e.target.id)
       modal.classList.remove('is-visible');
+      iframe.src = "";
     }
   }
 })
