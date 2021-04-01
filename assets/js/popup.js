@@ -28,15 +28,21 @@ let overlay = document.getElementById('overlay');
 // })
 
 document.onclick = function(e) {
-  if(e.target.id = "vid") {
+  if (e.target.id = "vid") {
+    console.log(e.target.id);
     modal.classList.add('is-visible');
-  modal.style.display = "block";
-  overlay.classList.add('is-visible');
-  } else if(e.target.id = "overlay") {
-    console.log("closing")
+    modal.style.display = "block";
+    // overlay.classList.add('is-visible');
+  } else if (e.target.id = "vidModal") {
+    console.log(e.target.id);
+    modal.classList.add('is-visible');
+    modal.style.display = "block";
+    // overlay.classList.add('is-visible');
+  } else {
+    console.log(e.target.id)
     modal.classList.remove('is-visible');
     modal.style.display = "none";
-    overlay.classList.remove('is-visible');
+    // overlay.classList.remove('is-visible');
   }
 }
 

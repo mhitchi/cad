@@ -526,7 +526,7 @@ a {
 }
 
 /** Overlay */
-.overlay {
+/* .overlay {
   opacity: 0;
   transition: opacity 0.3s;
   position: fixed;
@@ -537,7 +537,7 @@ a {
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,0.5);
-}
+} */
 
 /** JS */
 .is-visible {
