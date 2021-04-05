@@ -44,7 +44,7 @@
     font-size: 1rem !important;
   }
   #vid {
-    margin: -10rem auto 1rem auto;
+    margin: -6rem auto 1rem auto;
     width: 100%;
   }
   .nav-pills {
@@ -102,7 +102,7 @@
     font-size: 6rem !important; 
   }
   #vid {
-    margin: -10rem auto 1rem auto;
+    margin: -8rem auto 1rem auto;
     width: 50% !important;
   }
   .nav-pills {
@@ -133,7 +133,7 @@
     font-size: 6rem !important; 
   }
   #vid {
-    margin: -10rem auto 1rem auto;
+    margin: -8rem auto 1rem auto;
     width: 50% !important;
   }
   .nav-pills {
@@ -148,7 +148,7 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   #vid {
-    margin: -10rem auto 1rem auto;
+    margin: -8rem auto 1rem auto;
     width: 100% !important;
   }
   .challenge {
@@ -158,6 +158,10 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  #vid {
+    margin: -12rem auto 1rem auto;
+    width: 100% !important;
+  }
   h1 {
   font-size: 5.5rem !important; 
   }
