@@ -13,6 +13,10 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .button {
+    margin-top: -10px;
+    text-align: right !important;
+  }
   .container-fluid {
     padding-right:0;
     padding-left:0;
@@ -65,22 +69,26 @@
     margin-top: 3rem;
     width: 105%;
   }
-  .btn-danger {
+  /* .btn-danger {
     margin-top: 1rem !important;
     margin-bottom: 1rem !important;
-  }
+  } */
   .goal-stat {
     margin: 0 8px !important;
   }
   .finePrint {
     margin-top: 2.5rem;
   }
-  .giveBtn .btn {
+  /* .giveBtn .btn {
     margin-top: 2rem !important;
     margin-left: 3.5rem;
-  }
+  } */
   #countycontainer .highcharts-legend-item text {
     display: none;
+  }
+  #vidModal {
+    top: -180px !important;
+    margin: -30px auto 0 auto;
   }
 }
 
@@ -123,6 +131,14 @@
   }
   #USMAP g {
     margin: 0 auto !important;
+  }
+  .btn-danger {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+  #vidModal {
+    top: -150px !important;
+    margin: -30px auto 0 auto;
   }
 }
 
@@ -511,7 +527,7 @@ a {
 
 #USMAP {
   margin: 0 auto;
-  align: center;
+  text-align: center;
 }
 
 
@@ -521,7 +537,7 @@ a {
   opacity: 0;
   transition: opacity 0.5s;
   position: absolute;
-  top: -170px !important;
+  top: -150px !important;
   left: 0;
   right: 0;
   max-width: 100%;
@@ -547,4 +563,23 @@ a {
 .is-visible {
   opacity: 1 !important;
   pointer-events: auto !important;
+}
+
+.givingDay {
+  text-align: right;
+}
+
+.givingDay h3 {
+  font-size: 34px;
+  line-height: 1rem;
+  margin-top: .5rem;
+}
+
+.givingDay h3 span{
+  font-size: 45px;
+  font-family: HaveHeartTwo, "Permanent Marker", cursive;
+}
+
+.giveBtn {
+  text-align: left;
 }
