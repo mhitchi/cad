@@ -2,11 +2,6 @@ $(document).ready(function(){
   var portrait = window.matchMedia("(max-width: 600px)");
   var landscape = window.matchMedia("(min-width: 601px)");
 
-  $('.popup-link').magnificPopup({
-    type: 'video'
-    // other options
-  });
-
   // When the user scrolls down 100px from the top of the document, resize the header's font size
   window.onscroll = function() {scrollFunction()};
 
@@ -51,11 +46,11 @@ $(document).ready(function(){
   // landscape.addListener(scrollFunction); // Attach listener function on state changes
 
   const show = () => {
-    document.getElementById("vid").src = "assets/images/placeholder-vid-bg03.jpg";
+    document.getElementById("vid").src = "assets/images/kirby-bg-02.jpg";
   }
 
   const hide = () => {
-    document.getElementById("vid").src = "assets/images/placeholder-vid-bg02.jpg";
+    document.getElementById("vid").src = "assets/images/kirby-bg-01.jpg";
   }
 
 

@@ -5,7 +5,7 @@ let iframe = document.getElementById('iframe');
 imgBtn.addEventListener('click', () => {
   modal.classList.add('is-visible');
   modal.style.display = "block";
-  iframe.src = "https://www.youtube.com/embed/_Zw5bLnEADI";
+  iframe.src = "https://www.youtube.com/embed/jnAw6pPrujk";
   document.onclick = function(e) {
     if (e.target.id == "vidModal" || e.target.id == "vid") {
       // console.log(e.target.id)

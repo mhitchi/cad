@@ -52,7 +52,7 @@
                             <li class="nav-item"><h2 id="countdown">1 DAY TO GO</h2></li>
                             <li class="nav-item">
                                 <div class="button" id="topBtn">
-                                    <button type="button" class="btn btn-dark animate__animated animate__pulse animate__infinite	infinite animate__slow	2s"><a href="#">GIVE NOW</a></button>
+                                    <button type="button" class="btn btn-dark animate__animated animate__pulse animate__infinite	infinite animate__slow	2s"><a href="https://gail.uga.edu/callingalldawgs">GIVE NOW</a></button>
                                 </div>
                             </li>
                             <!--<li class="nav-item"><span class="stat">100</span>total gifts given</li>-->
@@ -84,7 +84,7 @@
             <div class="row diagonal bg-glory">
                 <div class="col-lg-3"></div>
                 <div class="col-lg-6 column align-center">
-                    <img id="vid" class="popup-link" src="assets/images/placeholder-vid-bg02.jpg" alt="watch video"/>
+                    <img id="vid" class="popup-link" src="assets/images/kirby-bg-01.jpg" alt="watch video" onmouseover="show()" onmouseout="hide()"/>
                     <!-- <button class="btn" id="btn-modal">OPEN</button> -->
                     <div id="vidModal">
                         <div id="video" class="embed-responsive embed-responsive-16by9">
@@ -312,7 +312,16 @@
             src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
             crossorigin="anonymous">
-        </script>>
+        </script>
+        <script>
+            const show = () => {
+                document.getElementById("vid").src = "assets/images/kirby-bg-02.jpg";
+            }
+
+            const hide = () => {
+                document.getElementById("vid").src = "assets/images/kirby-bg-01.jpg";
+            }
+        </script>
         <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
         <script src="https://code.highcharts.com/stock/highstock.js"></script>
