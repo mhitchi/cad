@@ -45,7 +45,10 @@
     font-size: 3.25rem !important; 
   }
   h2 {
-    font-size: 1rem !important;
+    font-size: 1.3rem !important;
+  }
+  h3 {
+    font-size: 1.25rem !important;
   }
   #vid {
     margin: -6rem auto 1rem auto;
@@ -87,7 +90,7 @@
     display: none;
   }
   #vidModal {
-    top: -180px !important;
+    top: -140px !important;
     margin: -30px auto 0 auto;
   }
 }
@@ -175,7 +178,7 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   #vid {
-    margin: -12rem auto 1rem auto;
+    margin: -10rem auto 1rem auto;
     width: 100% !important;
   }
   h1 {
@@ -259,6 +262,8 @@ body {
 
 .align-center {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .align-right {
@@ -583,3 +588,7 @@ a {
 .giveBtn {
   text-align: left;
 }
+
+/* ul {
+  list-style-type: none;
+} */
