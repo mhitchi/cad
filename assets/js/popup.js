@@ -6,8 +6,8 @@ imgBtn.addEventListener('click', () => {
   modal.classList.add('is-visible');
   modal.style.display = "block";
   iframe.src = "https://www.youtube.com/embed/jnAw6pPrujk?autoplay=1";
-  iframe.autoplay = true;
-  iframe.load();
+  // iframe.autoplay = true;
+  // iframe.load();
   document.onclick = function(e) {
     if (e.target.id == "vidModal" || e.target.id == "vid") {
       // console.log(e.target.id)
