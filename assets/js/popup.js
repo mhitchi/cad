@@ -5,7 +5,7 @@ let iframe = document.getElementById('iframe');
 imgBtn.addEventListener('click', () => {
   modal.classList.add('is-visible');
   modal.style.display = "block";
-  iframe.src = "https://www.youtube.com/embed/jnAw6pPrujk?autoplay=1";
+  iframe.src = "https://www.youtube.com/embed/jnAw6pPrujk?autoplay=1?rel=0";
   // iframe.autoplay = true;
   // iframe.load();
   document.onclick = function(e) {
