@@ -19,3 +19,12 @@ imgBtn.addEventListener('click', () => {
     }
   }
 })
+
+let patchArr = Array.from(document.getElementsByClassName("patches"));
+let bigPatchArr = Array.from(document.getElementsByClassName("patchesBig"));
+
+for (let i = 0; i < patchArr.length; i++) {
+  patchArr[i].addEventListener("click", () => {
+    bigPatchArr[i].classList.add("is-visible")
+  })
+}

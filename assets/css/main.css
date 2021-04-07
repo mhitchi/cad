@@ -93,6 +93,13 @@
     top: -140px !important;
     margin: -30px auto 0 auto;
   }
+
+  .align-right {
+    text-align: center;
+  }
+  .align-left {
+    text-align: center;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -268,6 +275,10 @@ body {
 
 .align-right {
   text-align: right;
+}
+
+.align-left {
+  text-align: left;
 }
 
 .stat {
@@ -594,8 +605,9 @@ a {
 } */
 
 .footer {
+  background-color: #111111;
   border-top: 2px #303030 solid;
-  padding-top: 30px;
+  padding-top: 60px;
 }
 
 .footer p {
@@ -607,4 +619,17 @@ a {
   font-size: 10px;
   font-style: normal !important;
   font-weight: 300;
+}
+
+.patchesBig {
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+  position: absolute;
+  top: -150px !important;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  margin: -30px auto 0 auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.8);
 }
