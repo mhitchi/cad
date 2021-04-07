@@ -34,9 +34,6 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 48px 0;
-  border-width: 4px 0 0;
-  border-style: solid;
-  border-color: #BA0C2F;
   background: url("../images/background-arch.jpg") #000000 center center no-repeat;
   background-size: cover;
   font-size: 16px;
@@ -104,7 +101,7 @@ body {
     max-width: 200px;
     height: 170px;
     background-color: transparent;
-    background-image: url("../images/GEORGIA-V-CW.png");
+    background-image: url("../images/UGAFoundation_white.png");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -118,7 +115,7 @@ body {
         margin: 0;
         max-width: 300px;
         height: 80px;
-        background-image: url("../images/GEORGIA-FS-CW.png");
+        background-image: url("../images/UGAFoundation_white.png");
         background-position: left top; } }
   .ugafooter__links-list {
     display: -webkit-box;
