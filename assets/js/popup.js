@@ -25,6 +25,14 @@ let bigPatchArr = Array.from(document.getElementsByClassName("patchesBig"));
 
 for (let i = 0; i < patchArr.length; i++) {
   patchArr[i].addEventListener("click", () => {
-    bigPatchArr[i].classList.add("is-visible")
+    document.onclick = function(e) {
+    if (e.target.id == (`patches${i}`) || e.target.id == (`patchesBig${i}`)) {
+      // console.log(e.target.id)
+      bigPatchArr[i].classList.add("is-visible")
+    } else {
+      // console.log(e.target.id)
+      bigPatchArr[i].classList.remove("is-visible")
+    }
+  }
   })
 }
