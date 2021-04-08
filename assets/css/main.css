@@ -118,6 +118,12 @@
     column-count: 1;
     margin: 0 20px 10px -15px;
   }
+  .image-popup-vertical-fit img {
+    width: 300px;
+  }
+  .separator {
+    margin-top: 2rem;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -171,13 +177,18 @@
   .align-right {
     text-align: center;
   }
-
   .align-left {
     text-align: center;
   }
   #boardCount {
     column-count: 2;
     margin: 0 20px 10px -15px;
+  }
+  .image-popup-vertical-fit img {
+    width: 180px !important;
+  }
+  .separator {
+    margin-top: 2rem;
   }
 }
 
@@ -204,9 +215,14 @@
   .align-right {
     text-align: right;
   }
-
   .align-left {
     text-align: left;
+  }
+  .separator {
+    margin-top: 4rem;
+  }
+  .image-popup-vertical-fit img {
+    width: 200px !important;
   }
 }
 
@@ -221,6 +237,9 @@
   }
   .have-heart {
     font-size: 6rem !important;
+  }
+  .image-popup-vertical-fit img {
+    width: 300px !important;
   }
 }
 
@@ -398,10 +417,6 @@ a {
   border: 1px #d7d4c6 solid;
   border-radius: 10px;
   margin: 5px;
-}
-
-.separator {
-  margin-top: 4rem;
 }
 
 #logo {
