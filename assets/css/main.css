@@ -68,6 +68,12 @@
     margin-top: 5rem;
     padding: 10px;
   }
+  .challenge h3 {
+    padding: 20px 10px 0 10px;
+  }
+  .challenge p {
+    padding: 0 10px;
+  }
   .glass {
     width: 100% !important;
   }
@@ -85,15 +91,11 @@
   .finePrint {
     margin-top: 2.5rem;
   }
-  /* .giveBtn .btn {
-    margin-top: 2rem !important;
-    margin-left: 3.5rem;
-  } */
   #countycontainer .highcharts-legend-item text {
     display: none;
   }
   #vidModal {
-    margin: 50px auto 0 auto;
+    margin: -215px auto 0 auto !important;
   }
 
   .align-right {
@@ -111,6 +113,10 @@
     margin-top: 10px;
     height: 100%;
     width: 100%;
+  }
+  #boardCount {
+    column-count: 1;
+    margin: 0 20px 10px -15px;
   }
 }
 
@@ -145,9 +151,6 @@
   .bg-glory {
     margin-top: 3rem;
   }
-  .giveBtn .btn {
-    float: right;
-  }
   .challenge {
     padding: 15px !important;
   }
@@ -166,11 +169,15 @@
     font-size: 5rem !important;
   }
   .align-right {
-    text-align: right;
+    text-align: center;
   }
 
   .align-left {
-    text-align: left;
+    text-align: center;
+  }
+  #boardCount {
+    column-count: 2;
+    margin: 0 20px 10px -15px;
   }
 }
 
@@ -193,6 +200,13 @@
   }
   .have-heart {
     font-size: 5rem !important;
+  }
+  .align-right {
+    text-align: right;
+  }
+
+  .align-left {
+    text-align: left;
   }
 }
 
@@ -410,6 +424,16 @@ a {
   cursor: pointer;
 }
 
+#boardCount {
+  color: #969696;
+  list-style-type: none !important;
+}
+
+#boardCount span {
+  font-style: none;
+  float: right;
+}
+
 .countdown-wrap {
     width: 100%;
     font-family: "Merriweather Sans", sans-serif;
@@ -572,7 +596,6 @@ a {
   opacity: 0;
   transition: opacity 0.5s;
   position: absolute;
-  top: -150px !important;
   left: 0;
   right: 0;
   max-width: 100%;
@@ -594,6 +617,7 @@ a {
   background-color: rgba(0,0,0,0.5);
 } */
 
+
 /** JS */
 .is-visible {
   opacity: 1 !important;
@@ -601,27 +625,14 @@ a {
 }
 
 .givingDay {
-  text-align: right;
-}
-
-.givingDay h3 {
-  font-size: 34px;
-  line-height: 1rem;
-  margin-top: .5rem;
-}
-
-.givingDay h3 span{
-  font-size: 45px;
-  font-family: HaveHeartTwo, "Permanent Marker", cursive;
+  padding: 20px;
+  text-align: center;
 }
 
 .giveBtn {
-  text-align: left;
+  margin-top: 10px;
+  text-align: center !important;
 }
-
-/* ul {
-  list-style-type: none;
-} */
 
 .footer {
   background-color: #111111;

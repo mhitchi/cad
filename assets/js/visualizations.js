@@ -3,6 +3,7 @@
     $
       .getJSON(
         'https://gail.uga.edu/WebApi/Query/6808291e-e67c-44c4-a15a-a6408b236c1b',
+        
         function(data) {
           var schools = {
             record: []

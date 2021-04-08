@@ -61,7 +61,12 @@ $(document).ready(function(){
     }
 
     const percent = (goal, number) => {
-        let perc = (number/goal) * 100;
+        let perc;
+        if(((number/goal) * 100) > 100) {
+            perc = 100;
+        } else {
+            perc = (number/goal) * 100;
+        }
         return parseInt(perc);
     }
 
