@@ -692,17 +692,17 @@ a {
 
 /* magnific */
 
-.magnific-img img {
+/* .magnific-img img {
     width: 100%;
     height: auto;
-}
+} */
 .mfp-bottom-bar,*{
    font-family: 'Abel', sans-serif;
 }
-.magnific-img {
+/* .magnific-img {
     display: inline-block;
     width: 32.3%;
-}
+} */
 a.image-popup-vertical-fit {
     cursor: -webkit-zoom-in;
 }
@@ -988,8 +988,8 @@ button::-moz-focus-inner {
 
 /* Main image in popup */
 img.mfp-img {
-  width: auto;
-  max-width: 100%;
+  /* width: auto;
+  max-width: 100%; */
   height: auto;
   display: block;
   line-height: 0;
