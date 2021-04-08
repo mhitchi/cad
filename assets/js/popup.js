@@ -24,6 +24,7 @@ let patchArr = Array.from(document.getElementsByClassName("patches"));
 let bigPatchArr = Array.from(document.getElementsByClassName("patchesBig"));
 let lightbox = document.getElementById("lightbox");
 let btns = Array.from(document.getElementsByClassName("lightboxBtn"));
+let index;
 
 for (let i = 0; i < patchArr.length; i++) {
   patchArr[i].addEventListener("click", () => {
@@ -60,16 +61,31 @@ for (let i = 0; i < patchArr.length; i++) {
             patch.classList.remove("is-visible")
           });
       }
-    // if (e.target.id == (`patches${i}`) || e.target.id == (`patchesBig${i}`)) {
-    //   // console.log(e.target.id)
-    //   lightbox.classList.add("is-visible")
-    //   bigPatchArr[i].classList.add("is-visible")
-    // } else if (e.target.id !== "prev" || e.target.id !== "next") {
-    //   // console.log(e.target.id)
-    //   bigPatchArr.forEach(patch => {
-    //     patch.classList.remove("is-visible")
-    //   })
-    // }
     }
   })
+  
 }
+
+//get current image's index in bigPatchArr
+  bigPatchArr.forEach(img => {
+    if (img.classList.contains("is-visible")) {
+      index = bigPathArr.indexOf(img);
+    }
+  })
+
+document.getElementById('prev').addEventListener("click", () => {
+  if (index >= 1) {
+    bigPatchArr[index-1].classList.add("is-visible");
+  } else {
+    bigPatchArr[index+2].classList.add("is-visible")
+  }
+})
+
+document.getElementById('next').addEventListener("click", () => {
+  if (index >= 1) {
+    bigPatchArr[index+1].classList.add("is-visible");
+  } else {
+    bigPatchArr[index-2].classList.add("is-visible")
+  }
+})
+
