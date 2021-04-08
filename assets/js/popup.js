@@ -27,22 +27,38 @@ let lightbox = document.getElementById("lightbox");
 for (let i = 0; i < patchArr.length; i++) {
   patchArr[i].addEventListener("click", () => {
     document.onclick = function(e) {
-    if (e.target.id == (`patches${i}`) || e.target.id == (`patchesBig${i}`)) {
-      // console.log(e.target.id)
-      lightbox.classList.add("is-visible")
-      bigPatchArr[i].classList.add("is-visible")
-    } else if (e.target.id == "prev") {
-      bigPatchArr[i].classList.remove("is-visible")
-      bigPatchArr[i-1].classList.add("is-visible")
-    } else if (e.target.id == "next") {
-      bigPatchArr[i].classList.remove("is-visible")
-      bigPatchArr[i+1].classList.add("is-visible")
-    } else {
-      // console.log(e.target.id)
-      bigPatchArr.forEach(patch => {
-        patch.classList.remove("is-visible")
-      })
-    }
+      switch(e.target.id) {
+        case `patches${i}`:
+          lightbox.classList.add("is-visible");
+          bigPatchArr[i].classList.add("is-visible");
+        break;
+        case `patchesBig${i}`: 
+          lightbox.classList.add("is-visible");
+          bigPatchArr[i].classList.add("is-visible");
+        break;
+        case "prev":
+          lightbox.classList.add("is-visible");
+          bigPatchArr[i-1].classList.add("is-visible");
+        break;
+        case "next":
+          lightbox.classList.add("is-visible");
+          bigPatchArr[i].classList.add("is-visible");
+        break;
+        default: 
+          bigPatchArr.forEach(patch => {
+            patch.classList.remove("is-visible")
+          });
+      }
+    // if (e.target.id == (`patches${i}`) || e.target.id == (`patchesBig${i}`)) {
+    //   // console.log(e.target.id)
+    //   lightbox.classList.add("is-visible")
+    //   bigPatchArr[i].classList.add("is-visible")
+    // } else if (e.target.id !== "prev" || e.target.id !== "next") {
+    //   // console.log(e.target.id)
+    //   bigPatchArr.forEach(patch => {
+    //     patch.classList.remove("is-visible")
+    //   })
+    // }
   }
   })
 }

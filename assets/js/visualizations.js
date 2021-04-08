@@ -104,7 +104,7 @@
   // *************
   Highcharts
     .getJSON(
-      'https://gail.uga.edu/WebApi/Query/b6e11c1e-3b28-4d7a-a503-590fd33eaaf1',
+      'https://gail.uga.edu/WebApi/Query/682d187d-24c7-47b1-ad1b-e1de812dfb64',
       function(data) {
 
         /**
@@ -327,7 +327,7 @@
   $(function() {
     $
       .getJSON(
-        'https://gail.uga.edu/WebApi/Query/08e30fad-eb3b-4306-ba42-07343450298e',
+        'https://gail.uga.edu/WebApi/Query/e633ffa8-823c-4f0d-a42b-53327f539277',
         function(data) {
           var chapters = {
             record: []
@@ -426,7 +426,7 @@
       google.setOnLoadCallback(drawVisualization);
 
       function drawVisualization(states) {
-        $.getJSON('https://gail.uga.edu/WebApi/Query/a4407f69-0f7f-410f-b7ba-aa615ec53134', function(json) {
+        $.getJSON('https://gail.uga.edu/WebApi/Query/0d13a9c6-b3fa-4652-bb9e-9445024a432a', function(json) {
 
           var states = [];
           states.push(['State', 'Number of Donors']);
