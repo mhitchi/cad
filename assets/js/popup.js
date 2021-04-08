@@ -2,6 +2,23 @@ let imgBtn = document.getElementById('vid');
 let modal = document.getElementById('vidModal');
 let iframe = document.getElementById('iframe');
 
+$(document).ready(function() {
+	$('.popup-gallery').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		tLoading: 'Loading image #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		},
+		image: {
+			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+		}
+	});
+});
+
 imgBtn.addEventListener('click', () => {
   modal.classList.add('is-visible');
   modal.style.display = "block";
@@ -20,72 +37,72 @@ imgBtn.addEventListener('click', () => {
   }
 })
 
-let patchArr = Array.from(document.getElementsByClassName("patches"));
-let bigPatchArr = Array.from(document.getElementsByClassName("patchesBig"));
-let lightbox = document.getElementById("lightbox");
-let btns = Array.from(document.getElementsByClassName("lightboxBtn"));
-let index;
+// let patchArr = Array.from(document.getElementsByClassName("patches"));
+// let bigPatchArr = Array.from(document.getElementsByClassName("patchesBig"));
+// let lightbox = document.getElementById("lightbox");
+// let btns = Array.from(document.getElementsByClassName("lightboxBtn"));
+// let index;
 
-for (let i = 0; i < patchArr.length; i++) {
-  patchArr[i].addEventListener("click", () => {
-    document.onclick = function(e) {
-      let evtID = e.target.id
-      switch(evtID) {
-        case `patches${i}`:
-          lightbox.classList.add("is-visible");
-          bigPatchArr[i].classList.add("is-visible");
-          btns.forEach(btn => btn.classList.add("is-visible"));
-        break;
-        case `patchesBig${i}`: 
-          lightbox.classList.add("is-visible");
-          bigPatchArr[i].classList.add("is-visible");
-        break;
-        case "prev":
-          lightbox.classList.add("is-visible");
-          if (i >= 1) {
-            bigPatchArr[i-1].classList.add("is-visible");
-          } else {
-            bigPatchArr[i+2].classList.add("is-visible");
-          }
-        break;
-        case "next":
-          lightbox.classList.add("is-visible");
-          if (i < 2) {
-            bigPatchArr[i+1].classList.add("is-visible");
-          } else {
-            bigPatchArr[i-2].classList.add("is-visible");
-          }
-        break;
-        default: 
-          bigPatchArr.forEach(patch => {
-            patch.classList.remove("is-visible")
-          });
-      }
-    }
-  })
+// for (let i = 0; i < patchArr.length; i++) {
+//   patchArr[i].addEventListener("click", () => {
+//     document.onclick = function(e) {
+//       let evtID = e.target.id
+//       switch(evtID) {
+//         case `patches${i}`:
+//           lightbox.classList.add("is-visible");
+//           bigPatchArr[i].classList.add("is-visible");
+//           btns.forEach(btn => btn.classList.add("is-visible"));
+//         break;
+//         case `patchesBig${i}`: 
+//           lightbox.classList.add("is-visible");
+//           bigPatchArr[i].classList.add("is-visible");
+//         break;
+//         case "prev":
+//           lightbox.classList.add("is-visible");
+//           if (i >= 1) {
+//             bigPatchArr[i-1].classList.add("is-visible");
+//           } else {
+//             bigPatchArr[i+2].classList.add("is-visible");
+//           }
+//         break;
+//         case "next":
+//           lightbox.classList.add("is-visible");
+//           if (i < 2) {
+//             bigPatchArr[i+1].classList.add("is-visible");
+//           } else {
+//             bigPatchArr[i-2].classList.add("is-visible");
+//           }
+//         break;
+//         default: 
+//           bigPatchArr.forEach(patch => {
+//             patch.classList.remove("is-visible")
+//           });
+//       }
+//     }
+//   })
   
-}
+// }
 
-//get current image's index in bigPatchArr
-  bigPatchArr.forEach(img => {
-    if (img.classList.contains("is-visible")) {
-      index = bigPathArr.indexOf(img);
-    }
-  })
+// //get current image's index in bigPatchArr
+//   bigPatchArr.forEach(img => {
+//     if (img.classList.contains("is-visible")) {
+//       index = bigPathArr.indexOf(img);
+//     }
+//   })
 
-document.getElementById('prev').addEventListener("click", () => {
-  if (index >= 1) {
-    bigPatchArr[index-1].classList.add("is-visible");
-  } else {
-    bigPatchArr[index+2].classList.add("is-visible")
-  }
-})
+// document.getElementById('prev').addEventListener("click", () => {
+//   if (index >= 1) {
+//     bigPatchArr[index-1].classList.add("is-visible");
+//   } else {
+//     bigPatchArr[index+2].classList.add("is-visible")
+//   }
+// })
 
-document.getElementById('next').addEventListener("click", () => {
-  if (index >= 1) {
-    bigPatchArr[index+1].classList.add("is-visible");
-  } else {
-    bigPatchArr[index-2].classList.add("is-visible")
-  }
-})
+// document.getElementById('next').addEventListener("click", () => {
+//   if (index >= 1) {
+//     bigPatchArr[index+1].classList.add("is-visible");
+//   } else {
+//     bigPatchArr[index-2].classList.add("is-visible")
+//   }
+// })
 
