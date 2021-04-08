@@ -23,14 +23,17 @@ imgBtn.addEventListener('click', () => {
 let patchArr = Array.from(document.getElementsByClassName("patches"));
 let bigPatchArr = Array.from(document.getElementsByClassName("patchesBig"));
 let lightbox = document.getElementById("lightbox");
+let btns = Array.from(document.getElementsByClassName("lightboxBtn"));
 
 for (let i = 0; i < patchArr.length; i++) {
   patchArr[i].addEventListener("click", () => {
     document.onclick = function(e) {
-      switch(e.target.id) {
+      let evtID = e.target.id
+      switch(evtID) {
         case `patches${i}`:
           lightbox.classList.add("is-visible");
           bigPatchArr[i].classList.add("is-visible");
+          btns.forEach(btn => btn.classList.add("is-visible"));
         break;
         case `patchesBig${i}`: 
           lightbox.classList.add("is-visible");
@@ -38,11 +41,19 @@ for (let i = 0; i < patchArr.length; i++) {
         break;
         case "prev":
           lightbox.classList.add("is-visible");
-          bigPatchArr[i-1].classList.add("is-visible");
+          if (i >= 1) {
+            bigPatchArr[i-1].classList.add("is-visible");
+          } else {
+            bigPatchArr[i+2].classList.add("is-visible");
+          }
         break;
         case "next":
           lightbox.classList.add("is-visible");
-          bigPatchArr[i].classList.add("is-visible");
+          if (i < 2) {
+            bigPatchArr[i+1].classList.add("is-visible");
+          } else {
+            bigPatchArr[i-2].classList.add("is-visible");
+          }
         break;
         default: 
           bigPatchArr.forEach(patch => {
@@ -59,6 +70,6 @@ for (let i = 0; i < patchArr.length; i++) {
     //     patch.classList.remove("is-visible")
     //   })
     // }
-  }
+    }
   })
 }
