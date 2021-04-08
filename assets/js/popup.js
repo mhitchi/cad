@@ -31,9 +31,17 @@ for (let i = 0; i < patchArr.length; i++) {
       // console.log(e.target.id)
       lightbox.classList.add("is-visible")
       bigPatchArr[i].classList.add("is-visible")
+    } else if (e.target.id == "prev") {
+      bigPatchArr[i].classList.remove("is-visible")
+      bigPatchArr[i-1].classList.add("is-visible")
+    } else if (e.target.id == "next") {
+      bigPatchArr[i].classList.remove("is-visible")
+      bigPatchArr[i+1].classList.add("is-visible")
     } else {
       // console.log(e.target.id)
-      bigPatchArr[i].classList.remove("is-visible")
+      bigPatchArr.forEach(patch => {
+        patch.classList.remove("is-visible")
+      })
     }
   }
   })
