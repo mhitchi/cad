@@ -2,21 +2,29 @@ let imgBtn = document.getElementById('vid');
 let modal = document.getElementById('vidModal');
 let iframe = document.getElementById('iframe');
 
-$(document).ready(function() {
-	$('.popup-gallery').magnificPopup({
-		delegate: 'a',
-		type: 'image',
-		tLoading: 'Loading image #%curr%...',
-		mainClass: 'mfp-img-mobile',
-		gallery: {
-			enabled: true,
-			navigateByImgClick: true,
-			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+$(document).ready(function(){
+$('.image-popup-vertical-fit').magnificPopup({
+	type: 'image',
+  mainClass: 'mfp-with-zoom', 
+  gallery:{
+			enabled:true
 		},
-		image: {
-			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-		}
-	});
+  zoom: {
+    enabled: true, 
+    duration: 300, // duration of the effect, in milliseconds
+    easing: 'ease-in-out', // CSS transition easing function
+    opener: function(openerElement) {
+      return openerElement.is('img') ? openerElement : openerElement.find('img');
+    },
+    callbacks: {
+      lazyLoad: function(item) {
+        console.log(item); // Magnific Popup data object that should be loaded
+      }
+    }
+}
+
+});
+
 });
 
 imgBtn.addEventListener('click', () => {
