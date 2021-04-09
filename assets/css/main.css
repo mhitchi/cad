@@ -606,11 +606,11 @@ a {
 }
 
 .pfad {
-  /* width: 40%; */
+  width: 100%;
   /* float: left; */
   column-count: 2;
   list-style-type: none;
-  /* margin: 10px; */
+  margin-left: -20px;
 }
 
 .pfad li img {

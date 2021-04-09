@@ -103,7 +103,15 @@ $(document).ready(function(){
                 document.getElementById("progress02").style.width = youngDonorPercent + "%";
                 document.getElementById("progress03").style.width = deiDonorPercent + "%";
                 document.getElementById("deiTotalGiftAmt").innerHTML = "$" + addCommas(parseInt(response.DEITotalGiftAmount));
-                
+
+                //add overlay if reached goal
+                let progressArr = [document.getElementById("progress01"), document.getElementById("progress02"), document.getElementById("progress03")];
+                progressArr.forEach(bar => {
+                    if(bar.style.width == "100%") {
+                        bar.closest('.challenge').style.opacity = ".75";
+                        bar.closest('.challenge').style.backgroundColor = "#303030";
+                    }
+                })
             })
     }
 
