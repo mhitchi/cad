@@ -72,7 +72,7 @@ $(document).ready(function(){
 
     const getData = () => {
         $.ajax({
-                url: "https://dev.dar.uga.edu/alumni/cad/test.json",
+                url: "https://callingalldawgs.uga.edu/UGAData.json",
                 dataType: 'json',
                 type: 'GET',
             }).then((response) => {
