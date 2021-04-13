@@ -139,21 +139,4 @@ $(document).ready(function(){
     });
   })
 
-  const targets = document.querySelectorAll('img');
-
-  window.addEventListener('scroll', (event) => {
-      targets.forEach(img => {
-  img.setAttribute.display = 'none';
-          console.log("lazy-loading");
-          const rect = img.getBoundingClientRect().top;
-          if(rect <= window.innerHeight) {
-              const src = img.getAttribute('data-src');
-              if(src){
-                  img.setAttribute.display = "block";
-                  img.setAttribute('src', src);
-                  img.classList.add('fade');
-              }
-          }
-      })
-  })
 })
