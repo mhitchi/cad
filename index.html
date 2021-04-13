@@ -21,23 +21,30 @@
         <meta property="twitter:description" content="Bulldogs believe in tomorrow. Because tomorrow isn't just another day. It's hope. It's potential. It's a promise.">
         <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
         
-        <link rel="shortcut icon" href="assets/images/favicon-16x16-2021-givingweek-v1b.png" />
+        <link rel="shortcut icon" href="assets/images/favicon-16x16-2021-givingweek-v1b.png" disabled/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="assets/css/main.css"/>
-        <link rel="stylesheet" href="assets/css/visualizations.css"/>
-        <link rel="stylesheet" href="assets/css/uga-footer.css"/>
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link class="link" rel="stylesheet" href="assets/css/visualizations.css" disabled/>
+        <!-- <link class="link" rel="stylesheet" href="assets/css/uga-footer.css" disabled/> -->
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>  
         <!-- Magnific Popup core CSS file -->
-        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <link class="link" rel="stylesheet" href="assets/css/magnific-popup.css" disabled>
          <!-- Animate.css -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link class="link" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" disabled/>
         <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&display=swap">
-        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"> -->
-        <link rel="stylesheet" type="text/css" href="assets/fonts/Trade_Gothic_Webkit/Trade_Gothic_Webkit.css">
-        <link rel="stylesheet" type="text/css" href="assets/fonts/MyFontsWebfontsKit/MyFontsWebfontsKit.css">
+        <link class="link" rel="preconnect" href="https://fonts.gstatic.com" disabled>
+        <link class="link" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&display=swap" disabled>
+        <!-- <link class="link" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"> -->
+        <link class="link" rel="stylesheet" type="text/css" href="assets/fonts/Trade_Gothic_Webkit/Trade_Gothic_Webkit.css" disabled>
+        <link class="link" rel="stylesheet" type="text/css" href="assets/fonts/MyFontsWebfontsKit/MyFontsWebfontsKit.css" disabled>
+        <script type="text/javascript">
+            window.onload = function()
+            {
+                let linkArr = Array.from(document.getElementsByClassName('link'));
+                linkArr.forEach(link => link.removeAttribute('disabled'))
+            }
+        </script>
     </head>
     <body>
     <!-- Nav -->
@@ -428,6 +435,7 @@ Contact Us | Privacy Policy</span></p>
 
 
         <script
+            async 
             src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
             crossorigin="anonymous">
@@ -442,20 +450,21 @@ Contact Us | Privacy Policy</span></p>
             }
         </script>
         <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-        <script src="https://code.highcharts.com/stock/highstock.js"></script>
-        <script src="https://code.highcharts.com/highcharts-more.js"></script>
-        <script src="https://code.highcharts.com/maps/modules/map.js"></script>
-        <script src="https://code.highcharts.com/maps/modules/data.js"></script>
-        <script src="https://code.highcharts.com/mapdata/countries/us/us-ga-all.js"></script>
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-        <script src="assets/js/main.js"></script>
-        <script src="assets/js/countdown.js"></script>
-        <script src="assets/js/visualizations.js"></script>
-        <script src="assets/js/data.js"></script>
-        <script src="assets/js/popup.js"></script>
-        <script src="assets/js/uga-footer.js"></script>
+        <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+        <script async src="assets/js/main.js"></script>
+        <script defer src="assets/js/countdown.js"></script>
+        <script defer src="assets/js/visualizations.js"></script>
+        <script defer src="assets/js/data.js"></script>
+        <script defer src="assets/js/popup.js"></script>
+        <!-- <script defer src="assets/js/uga-footer.js"></script> -->
         <!-- Magnific Popup core JS file -->
-        <script src="assets/js/jquery.magnific-popup.js"></script>
+        <script defer src="assets/js/jquery.magnific-popup.js"></script>
+        <!-- Visualizations -->
+        <script defer src="https://code.highcharts.com/stock/highstock.js"></script>
+        <script defer src="https://code.highcharts.com/highcharts-more.js"></script>
+        <script defer src="https://code.highcharts.com/maps/modules/map.js"></script>
+        <script defer src="https://code.highcharts.com/maps/modules/data.js"></script>
+        <script defer src="https://code.highcharts.com/mapdata/countries/us/us-ga-all.js"></script>
+        <script defer type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     </body>
 </html>
