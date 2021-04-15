@@ -5,32 +5,62 @@ $(document).ready(function(){
   // When the user scrolls down 100px from the top of the document, resize the header's font size
   window.onscroll = function() {scrollFunction()};
 
+  // function scrollFunction() {
+  //   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+  //     document.getElementById("header").style.height = "60px";
+  //     if (portrait.matches) {
+        
+  //       document.getElementById("logo").style.height = "60px";
+      
+  //       document.getElementById("EDC").style.marginTop = "2rem !important";
+  //     } else if (landscape.matches) {
+  //       document.getElementById("logo").style.margin = "0 0 !important";
+  //       document.getElementById("logo").style.height = "60px";
+  //     } else {
+  //       document.getElementById("logo").style.height = "60px";
+  //     }
+  //     document.getElementById("header").style.backgroundColor = "rgba(0,0,0,0.75)";
+  //   } else {
+  //     document.getElementById("header").style.height = "78px";
+  //     if (portrait.matches) {
+  //       document.getElementById("logo").style.margin = "0 0";
+  //       document.getElementById("logo").style.height = "70px";
+  //       document.getElementById("totalGiftAmt").style.display = "block";
+  //     } else if (landscape.matches) {
+  //       document.getElementById("logo").style.margin = "0 0 !important";
+  //       document.getElementById("logo").style.height = "80px";
+  //     } else {
+  //       document.getElementById("logo").style.height = "100px";
+  //     }
+  //     document.getElementById("header").style.backgroundColor = "rgba(0,0,0,1)";
+      
+  //   }
   function scrollFunction() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      document.getElementById("header").style.height = "60px";
+      document.getElementById("header").style.height = "100px";
       if (portrait.matches) {
         // document.getElementById("logo").style.margin = "0 45px !important";
-        document.getElementById("logo").style.height = "60px";
+        document.getElementById("logo").style.height = "120px";
         // margin top not working
         document.getElementById("EDC").style.marginTop = "2rem !important";
       } else if (landscape.matches) {
         document.getElementById("logo").style.margin = "0 0 !important";
-        document.getElementById("logo").style.height = "60px";
+        document.getElementById("logo").style.height = "120px";
       } else {
-        document.getElementById("logo").style.height = "60px";
+        document.getElementById("logo").style.height = "120px";
       }
       document.getElementById("header").style.backgroundColor = "rgba(0,0,0,0.75)";
     } else {
-      document.getElementById("header").style.height = "78px";
+      document.getElementById("header").style.height = "160px";
       if (portrait.matches) {
         document.getElementById("logo").style.margin = "0 0";
-        document.getElementById("logo").style.height = "70px";
+        document.getElementById("logo").style.height = "150px";
         document.getElementById("totalGiftAmt").style.display = "block";
       } else if (landscape.matches) {
         document.getElementById("logo").style.margin = "0 0 !important";
-        document.getElementById("logo").style.height = "80px";
+        document.getElementById("logo").style.height = "160px";
       } else {
-        document.getElementById("logo").style.height = "100px";
+        document.getElementById("logo").style.height = "220px";
       }
       document.getElementById("header").style.backgroundColor = "rgba(0,0,0,1)";
       

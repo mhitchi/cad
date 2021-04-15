@@ -220,7 +220,18 @@
                     backgroundColor: ( // theme
                         Highcharts.defaultOptions &&
                         Highcharts.defaultOptions.legend && Highcharts.defaultOptions.legend.backgroundColor) ||
-                      'rgba(0, 0, 0, 0.85)'
+                      'rgba(0, 0, 0, 0.85)',
+                    labelFormatter: function () {
+                      if (this.from === undefined) {
+                          return '< ' + this.to;
+                      }
+      
+                      if (this.to === undefined) {
+                          return '> ' + this.from;
+                      }
+      
+                      return this.from + ' - ' + this.to;
+                  }
                   },
 
                   mapNavigation: {
