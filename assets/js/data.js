@@ -78,6 +78,7 @@ $(document).ready(function(){
             }).then((response) => {
                 //console.log(response);
                 let total = parseInt(response.TotalGiftAmount);
+                let totalGifts = parseInt(response.info.DonorGiftCnt);
                 let newDonorAmountLeft = noNeg(parseInt(response.NewDonorCappedGiftAmount));
                 let youngDonorAmountLeft = noNeg(parseInt(response.GOLDCappedGiftAmount))
 
@@ -91,6 +92,7 @@ $(document).ready(function(){
 
                 //print to DOM
                 document.getElementById("totalGiftAmt").innerHTML = "$" + addCommas(total);
+                document.getElementById("totalGiftCnt").innerHTML = addCommas(totalGifts) + " gifts";
                 document.getElementById("newDonorAmtLeft").innerHTML = "$" + addCommas(newDonorAmountLeft);
                 document.getElementById("youngDonorAmtLeft").innerHTML = "$" + addCommas(youngDonorAmountLeft);
                 document.getElementById("newDonorCnt").innerHTML = response.NewDonorCnt;
